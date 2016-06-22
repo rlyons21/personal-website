@@ -18,9 +18,6 @@
 
 		<p> Being able to edit content and steal account information are obvious security problems, but what other types of issues would raise concern and make a website be considered vulnerable? Is there any way to test vulnerability of a website before it is made public? </p>
 
-		<h5> Profiles</h5>
-		<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
-		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
-		<a href="https://github.com/rlyons21">GitHub</a>
+		
 	</body>
 </html>

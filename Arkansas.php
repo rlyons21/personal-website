@@ -15,9 +15,6 @@
 		<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/11219086_10204095680418656_8354740106027246978_n.jpg?oh=23820a1a3d5cfebe087bca8a008fb6f8&oe=57C5BB8F"/>
 		<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13310562_10206338867296926_2871378763049934334_n.jpg?oh=37770ba3e469217e23abeb06aff408f7&oe=57DE5EB2"/>
 
-		<h5> Profiles</h5>
-		<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
-		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
-		<a href="https://github.com/rlyons21">GitHub</a>
+		
 	</body>
 </html>

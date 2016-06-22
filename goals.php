@@ -25,9 +25,5 @@
 				<li> Never stop learning </li>
 			</ul>
 
-		<h5> Profiles</h5>
-		<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
-		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
-		<a href="https://github.com/rlyons21">GitHub</a>
 	</body>
 </html>
