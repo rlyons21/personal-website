@@ -4,11 +4,7 @@
 		<title> Article | Rachel Lyons</title>
 	</head>
 	<body style="background-color: #7fffd4;font-size:20px">
-		<a href="index.html">Home</a>
-		<em><strong><a href="article.html" style="text-decoration: none; color:black">Article</a></strong></em>
-		<a href="goals.html"> Goals</a>
-		<a href="Arkansas.html">Arkansas</a>
-		<p> I read this  <a href="http://www.msn.com/en-us/news/us/teen-hacks-pentagon-websites-gets-thanked-for-finding-bugs/ar-AAhgHRX">article</a> off of Hacker News.</p>
+		<?php include("navigation.php") ?>
 
 		<h4><em> What I Found Interesting & Questions Rainsed</em></h4>
 

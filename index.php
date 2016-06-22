@@ -7,10 +7,7 @@
 
 	<body style="background-color: #ffff99">
 	<!-- Navigation -->
-		<em><strong><a href="index.html" style="text-decoration: none; color:black">Home</a></strong></em>
-		<a href="article.html">Article</a>
-		<a href="goals.html"> Goals</a>
-		<a href="Arkansas.html">Arkansas</a>
+		<?php include("navigation.php") ?>
 
 
 		<h1 style= "color:blue; text-align: center"> Rachel Lyons</h1>
@@ -22,9 +19,7 @@
 		<p> During my junior year at UNO I found that I really like coding, so off to Omaha Code School I went. </p>
 		<p> I really enjoy mountain biking when it isn't too hot or cold outside. During the winter I tend to do alot of bowling with my friends. Another interest of mine is motorcyles. I grew up riding on the back of my dad's Harley. Now I ride on the back of my boyfriend's.</p>
 
-		<h5> Profiles</h5>
-		<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
-		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
-		<a href="https://github.com/rlyons21">GitHub</a>
+
+		
 	</body>
 </html>  

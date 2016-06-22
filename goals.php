@@ -5,10 +5,7 @@
 	</head>
 	<body style="background-color:pink">
 
-		<a href="index.html">Home</a>
-		<a href="article.html">Article</a>
-		<em><strong><a href="goals.html" style="text-decoration: none; color:black"> Goals</a></strong></em>
-		<a href="Arkansas.html">Arkansas</a>
+		<?php include("navigation.php") ?>
 
 		<h2 style="color:red; text-align:center; font-family:sans-serif;"> My Goals</h2>
 

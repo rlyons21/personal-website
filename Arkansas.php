@@ -5,11 +5,8 @@
 	</head>
 	<body style="background-color:#00cc66">
 		
+		<?php include("navigation.php") ?>
 
-		<a href="index.html">Home</a>
-		<a href="article.html">Article</a>
-		<a href="goals.html"> Goals</a>
-		<em><strong><a href="Arkansas.html" style="text-decoration: none; color:black">Arkansas</a></strong></em>
 		<h3> Here are some pictures from my last 2 trips to Arkansas</h3>
 		<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13254267_10206317572724575_8533562188905907741_n.jpg?oh=d3ee5dcd927892a785f8cb6ae9bf2f3e&oe=57CB08CF"/>
 		<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13263810_10206328282272307_1023225884138406645_n.jpg?oh=ea4a4fb007c4339354a23dc53aab6997&oe=57DA404B"/>
