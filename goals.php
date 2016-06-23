@@ -4,7 +4,8 @@
 		<title> Goals | Rachel Lyons</title>
 	</head>
 	<body style="background-color:pink">
-
+	<div class="content">
+		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 		<?php include("navigation.php") ?>
 
 		<h2 style="color:red; text-align:center; font-family:sans-serif;"> My Goals</h2>
@@ -24,6 +25,6 @@
 				<li> Earn a promotion</li>
 				<li> Never stop learning </li>
 			</ul>
-
+	</div>		
 	</body>
 </html>

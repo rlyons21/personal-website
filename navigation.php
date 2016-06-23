@@ -13,7 +13,10 @@
 
 	<div class="nav_section2">
 		<div class="nav_item"><a href="index.php"> Home </a></div>
-		<div class="nav_item"><a href="article.php"> Article </a></div>
+		<p> Articles</p>
+		<ul>
+			<li><div class="nav_item"><a href="article.php"> Article </a></div></li>
+		</ul>
 		<div class="nav_item"><a href="goals.php">  Goals  </a></div>
 		<div class="nav_item"><a href="Arkansas.php"> Arkansas </a></div>
 	</div>

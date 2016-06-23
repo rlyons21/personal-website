@@ -4,6 +4,8 @@
 		<title> Article | Rachel Lyons</title>
 	</head>
 	<body style="background-color: #7fffd4;font-size:20px">
+	<div class="content">
+		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 		<?php include("navigation.php") ?>
 
 		<h4><em> What I Found Interesting & Questions Rainsed</em></h4>
@@ -18,6 +20,6 @@
 
 		<p> Being able to edit content and steal account information are obvious security problems, but what other types of issues would raise concern and make a website be considered vulnerable? Is there any way to test vulnerability of a website before it is made public? </p>
 
-		
+	</div>	
 	</body>
 </html>
