@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html>		
 
+<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 
-<?php $pageName = basename($_SERVER['PHP_SELF']); ?>
+<div class= "nav">
+	<div class="nav_section1">
+		<div class="nav_item"><h2> Rachel Lyons</h2></div>
+			<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
+			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
+			<a href="https://github.com/rlyons21">GitHub</a>
+	</div>
 
-<?php if($pageName == "index.php"){ ?>
-			<strong><a href="index.php" style="color:black"> Home </a></strong>
-			<a href="article.php"> Article </a>
-			<a href="goals.php">  Goals  </a>
-			<a href="Arkansas.php"> Arkansas </a>
-	 <?php } ?>
-
-<?php if($pageName == "goals.php"){ ?>
-			<a href="index.php"> Home </a>
-			<a href="article.php"> Article </a>
-			<strong><a href="goals.php" style="color:black">  Goals  </a></strong>
-			<a href="Arkansas.php"> Arkansas </a>
-<?php } ?>
-
-<?php if($pageName == "article.php"){ ?>
-			<a href="index.php"> Home </a>
-			<strong><a href="article.php" style="color:black"> Article </a></strong>
-			<a href="goals.php">  Goals  </a>
-			<a href="Arkansas.php"> Arkansas </a>
-<?php } ?>
-
-	<?php if($pageName == "Arkansas.php"){ ?>
-			<a href="index.php"> Home </a>
-			<a href="article.php"> Article </a>
-			<a href="goals.php">  Goals  </a>
-			<strong><a href="Arkansas.php" style="color:black"> Arkansas </a></strong>
-<?php } ?>
-
-
-
-
+	<div class="nav_section2">
+		<div class="nav_item"><a href="index.php"> Home </a></div>
+		<div class="nav_item"><a href="article.php"> Article </a></div>
+		<div class="nav_item"><a href="goals.php">  Goals  </a></div>
+		<div class="nav_item"><a href="Arkansas.php"> Arkansas </a></div>
+	</div>
+</div>
 	
 
 
-	<p>Profiles:</p>
-	<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
-	<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
-	<a href="https://github.com/rlyons21">GitHub</a>
+
 
 </html>
