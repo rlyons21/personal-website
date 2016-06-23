@@ -3,7 +3,7 @@
 	<head>
 		<title>Arkansas | Rachel Lyons</title>
 	</head>
-	<body style="background-color:#00cc66">
+	<body style="background-color:#ABB2B9">
 	<div class="content">
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 		

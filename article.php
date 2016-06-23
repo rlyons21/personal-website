@@ -3,7 +3,7 @@
 	<head>
 		<title> Article | Rachel Lyons</title>
 	</head>
-	<body style="background-color: #7fffd4;font-size:20px">
+	<body style="background-color: #EBCDED">
 	<div class="content">
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 		<?php include("navigation.php") ?>
