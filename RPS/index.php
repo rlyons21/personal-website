@@ -9,7 +9,7 @@
 
 		<form>
   			Name:<br>
-  			<input type="text" name="firstname"><br>
+  			<input type="text" name="name"><br>
     	</form>
 
 
