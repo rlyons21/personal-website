@@ -6,7 +6,8 @@
 </head>
 
 <body>
-	<?php include("navigation.php") ?>
+	<?php include("../navigation.php") ?>
+	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
     	<?php 
     		$choices = array("rock", "paper", "scissors");
 			$comp_choice = $choices[rand(0,count($choices)-1)];
@@ -33,6 +34,9 @@
 			<h1> Computer Won!</h1>
 			<form action="choose.php">
 					<input type="submit" value="Play Again!">
+			</form>
+			<form action="www.rlyons21.omahacodeschool.com">
+					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 
