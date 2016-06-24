@@ -5,7 +5,7 @@
 		<title>Rachel Lyons | Home</title>
 	</head>
 
-	<body style = "background-color:#BEF4DE">
+	<body id = home style = "background-color:#BEF4DE">
 
 
 	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">

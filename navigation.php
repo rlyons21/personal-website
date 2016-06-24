@@ -12,13 +12,48 @@
 	</div>
 
 	<div class="nav_section2">
-		<div class="nav_item"><a href="index.php"> Home </a></div>
-		<p> Articles</p>
+		<?php $pageName = basename($_SERVER['PHP_SELF']); ?>
+
+<?php if($pageName == "index.php"){ ?>
+			<p><strong><a href="index.php" style="color:blue"> Home </a></strong></p>
+			<p><a href="goals.php">  Goals  </a><p>
+			<p><a href="Arkansas.php"> Arkansas </a></p>
+			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><a href="article.php"> <q>Hack the Pentagon</q> </a></div></li>
+			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
 		</ul>
-		<div class="nav_item"><a href="goals.php">  Goals  </a></div>
-		<div class="nav_item"><a href="Arkansas.php"> Arkansas </a></div>
+	 <?php } ?>
+
+<?php if($pageName == "goals.php"){ ?>
+			<p><a href="index.php"> Home </a><p>
+			<p><strong><a href="goals.php" style="color:blue">  Goals  </a></strong></p>
+			<p><a href="Arkansas.php"> Arkansas </a><p>
+			<p style="padding:2px"> Articles</p>
+		<ul>
+			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a><p></div></li>
+		</ul>
+<?php } ?>
+
+<?php if($pageName == "hack the pentagon.php"){ ?>
+			<p><a href="index.php"> Home </a></p>
+			<p><a href="goals.php">  Goals  </a></p> 
+			<p><a href="Arkansas.php"> Arkansas </a></p> 
+			<p style="padding:2px"> Articles</p>
+		<ul>
+			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav style="color:blue"> <q>Hack the Pentagon</q> </a></p></div></li>
+		</ul>
+<?php } ?>
+
+	<?php if($pageName == "Arkansas.php"){ ?>
+			<p><a href="index.php"> Home </a></p> 
+			<p><a href="goals.php">  Goals  </a></p> 
+			<p><strong><a href="Arkansas.php" style="color:blue"> Arkansas </a></strong></p>
+			<p style="padding:2px"> Articles</p>
+		<ul>
+			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
+		</ul>
+<?php } ?>
+		
 	</div>
 </div>
 	
