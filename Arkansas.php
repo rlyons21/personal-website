@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Arkansas | Rachel Lyons</title>
 	</head>
 	<body style="background-color:#ABB2B9">

@@ -6,8 +6,9 @@
 </head>
 
 <body>
-	<div class="RPS-content">
-	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
+	<div class="RPScontent">
+		<?php include("../navigation.php") ?>
+		<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
     	<?php 
     		$choices = array("rock", "paper", "scissors");
 			$comp_choice = $choices[rand(0,count($choices)-1)];
@@ -35,9 +36,6 @@
 			<form action="index.php">
 					<input type="submit" value="Play Again!">
 			</form>
-			<form action="../index.php">
-					<input type="submit" value="Return Home">
-			</form>
 		<?php } ?>
 
 
@@ -45,9 +43,6 @@
 			<h1> You Won!</h1>
 			<form action="index.php">
 					<input type="submit" value="Play Again!">
-			</form>
-			<form action="../index.php">
-					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 
@@ -57,9 +52,6 @@
 			<form action="index.php">
 					<input type="submit" value="Play Again!">
 			</form>
-			<form action="../index.php">
-					<input type="submit" value="Return Home">
-			</form>
 		<?php } ?>
 
 
@@ -67,9 +59,6 @@
 			<h1> You Won!</h1>
 			<form action="index.php">
 					<input type="submit" value="Play Again!">
-			</form>
-			<form action="../index.php">
-					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 
@@ -79,9 +68,6 @@
 			<form action="index.php">
 					<input type="submit" value="Play Again!">
 			</form>
-			<form action="../index.php">
-					<input type="submit" value="Return Home">
-			</form>
 		<?php } ?>
 			
 
@@ -90,13 +76,7 @@
 			<form action="index.php">
 					<input type="submit" value="Play Again!">
 			</form>
-			<form action="../index.php">
-					<input type="submit" value="Return Home">
-			</form>
 		<?php } ?>
-
-
-
 	</div>
 </body>
 
