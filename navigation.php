@@ -6,9 +6,9 @@
 <div class= "nav">
 	<div class="nav_section1">
 		<div class="nav_item"><h2 style ="font-family: cursive"> Rachel Lyons</h2></div>
-			<a href="https://www.facebook.com/rachel.lyons.359">Facebook</a>
-			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123">LinkedIn</a>
-			<a href="https://github.com/rlyons21">GitHub</a>
+			<a href="https://www.facebook.com/rachel.lyons.359"><img src="fbIcon.jpeg"/></a>
+			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="inIcon.png"/></a>
+			<a href="https://github.com/rlyons21"><img src="githubSymbol.png"/></a>
 	</div>
 
 	<div class="nav_section2">

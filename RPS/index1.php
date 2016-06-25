@@ -9,7 +9,7 @@
 		<?php include("../navigation.php") ?>
 		<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
 
-		<h2> Lets play Rock,Paper, Scissors!</h2>
+		<h2> Lets play Rock, Paper, Scissors!</h2>
 
 		<h4> Do you want to choose Rock, Paper or Scissors?</h4>
 
@@ -18,6 +18,5 @@
   				<input type="text" name="userchoice">
   				<input type="submit">
     		</form>
-
 	</body>
 </html>
