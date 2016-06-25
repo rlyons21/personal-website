@@ -71,3 +71,7 @@ a:selected {
 	color:blue;
 	font-weight:bold;
 }
+
+.RPS-content{
+	float:center;
+}

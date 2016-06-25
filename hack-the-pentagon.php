@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Article | Rachel Lyons</title>
+		<title> Hack the Pentagon | Rachel Lyons</title>
 	</head>
 	<body style="background-color: #EBCDED">
 	<div class="content">

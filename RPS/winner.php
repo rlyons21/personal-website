@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<?php include("../navigation.php") ?>
+	<div class="RPS-content">
 	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
     	<?php 
     		$choices = array("rock", "paper", "scissors");
@@ -16,7 +16,7 @@
 
 			if($user_choice != "rock" and $user_choice != "paper" and $user_choice != "scissors"){ ?>
 				<p> You entered an invalid choice.</p> 
-				<form action="choose.php">
+				<form action="index.php">
 					<input type="submit" value="Choose again!">
 				</form>
 
@@ -25,17 +25,17 @@
 		<?php
 			if($user_choice == $comp_choice){ ?>
 				<p> You and the computer both chose <?php echo $user_choice ?>.</p> 
-				<form action="choose.php">
+				<form action="index.php">
 					<input type="submit" value="Choose again!">
 				</form>
 		<?php } ?>
 
 		<?php if($user_choice == "rock" and $comp_choice == "paper"){ ?>
 			<h1> Computer Won!</h1>
-			<form action="choose.php">
+			<form action="index.php">
 					<input type="submit" value="Play Again!">
 			</form>
-			<form action="www.rlyons21.omahacodeschool.com">
+			<form action="../index.php">
 					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
@@ -43,45 +43,61 @@
 
 		<?php if($user_choice == "rock" and $comp_choice == "scissors"){ ?>
 			<h1> You Won!</h1>
-			<form action="choose.php">
+			<form action="index.php">
 					<input type="submit" value="Play Again!">
+			</form>
+			<form action="../index.php">
+					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 
 
 		<?php if($user_choice == "paper" and $comp_choice == "scissors"){ ?>
 			<h1> Computer Won!</h1>
-			<form action="choose.php">
+			<form action="index.php">
 					<input type="submit" value="Play Again!">
+			</form>
+			<form action="../index.php">
+					<input type="submit" value="Return Home">
+			</form>
 		<?php } ?>
 
 
 		<?php if($user_choice == "paper" and $comp_choice == "rock"){ ?>
 			<h1> You Won!</h1>
-			<form action="choose.php">
+			<form action="index.php">
 					<input type="submit" value="Play Again!">
+			</form>
+			<form action="../index.php">
+					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 
 
 		<?php if($user_choice == "scissors" and $comp_choice == "rock"){ ?>
 			<h1> Computer Won!</h1>
-			<form action="choose.php">
+			<form action="index.php">
 					<input type="submit" value="Play Again!">
+			</form>
+			<form action="../index.php">
+					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 			
 
 		<?php if($user_choice == "scissors" and $comp_choice == "paper"){ ?>
 			<h1> You Won!</h1>
-			<form action="choose.php">
+			<form action="index.php">
 					<input type="submit" value="Play Again!">
+			</form>
+			<form action="../index.php">
+					<input type="submit" value="Return Home">
 			</form>
 		<?php } ?>
 
 
 
-
+	</div>
 </body>
 
 

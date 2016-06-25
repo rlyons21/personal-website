@@ -20,7 +20,7 @@
 			<p><a href="Arkansas.php"> Arkansas </a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
 		</ul>
 	 <?php } ?>
 
@@ -30,17 +30,17 @@
 			<p><a href="Arkansas.php"> Arkansas </a><p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a><p></div></li>
+			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a><p></div></li>
 		</ul>
 <?php } ?>
 
-<?php if($pageName == "hack the pentagon.php"){ ?>
+<?php if($pageName == "hack-the-pentagon.php"){ ?>
 			<p><a href="index.php"> Home </a></p>
 			<p><a href="goals.php">  Goals  </a></p> 
 			<p><a href="Arkansas.php"> Arkansas </a></p> 
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav style="color:blue"> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav style="color:blue"> <q>Hack the Pentagon</q> </a></p></div></li>
 		</ul>
 <?php } ?>
 
@@ -50,7 +50,7 @@
 			<p><strong><a href="Arkansas.php" style="color:blue"> Arkansas </a></strong></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack the pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
 		</ul>
 <?php } ?>
 		
