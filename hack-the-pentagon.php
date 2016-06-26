@@ -5,8 +5,7 @@
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 		<?php include("navigation.php") ?>
 	</head>
-	<body>
-	<div class="articleContent">
+	<body class="articleContent">
 		<h3>Hack the Pentagon</h3>
 		<h4><em> What I Found Interesting & Questions Raised</em></h4>
 
@@ -19,7 +18,5 @@
 		<p> 138 valid reports of vulnerability on U.S. Department of Defense websites sounds like a lot of security problems for government websites. I imagine that the Department of Defense has many highly-skilled individuals developing and maintaining its sites. So how does that many major problems get past so many intelligent eyes?</p>
 
 		<p> Being able to edit content and steal account information are obvious security problems, but what other types of issues would raise concern and make a website be considered vulnerable? Is there any way to test vulnerability of a website before it is made public? </p>
-
-	</div>	
 	</body>
 </html>

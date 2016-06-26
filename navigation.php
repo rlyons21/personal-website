@@ -24,6 +24,7 @@
 		<ul>
 			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
 			<li><p><a href="the-web.php">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 
 	 <?php } ?>
@@ -37,6 +38,7 @@
 		<ul>
 			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
 			<li><p><a href="the-web.php">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -49,6 +51,7 @@
 		<ul>
 			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
 			<li><p><a href="the-web.php">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -61,6 +64,7 @@
 		<ul>
 			<li><p><a href="../hack-the-pentagon.php">Hack the Pentagon</a></p></li>
 			<li><p><a href="../the-web.php">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 		
@@ -73,6 +77,7 @@
 		<ul>
 			<li><p><a href="hack-the-pentagon.php" style="color:blue">Hack the Pentagon</a></p></li>
 			<li><p><a href="the-web.php">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -85,6 +90,20 @@
 		<ul>
 			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
 			<li><p><a href="the-web.php" style="color:blue">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
+		</ul>
+<?php } ?>
+
+<?php if($pageName == "HTML-tags.php"){ ?>
+			<p><a href="index.php"> Home </a></p>
+			<p><a href="goals.php">  Goals  </a></p> 
+			<p><a href="Arkansas.php"> Arkansas </a></p> 
+			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
+			<p style="padding:2px"> Articles</p>
+		<ul>
+			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="the-web.php">The Web</a></p></li>
+			<li><p><a href="HTML-tags.php" style="color:blue">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 	</div>

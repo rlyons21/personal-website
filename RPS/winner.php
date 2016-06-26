@@ -3,8 +3,8 @@
 
 <head>
 	<title> Rock, Paper, Scissors</title>
-	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-	<?php include("navigation.php") ?>
+	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
+	<?php include("../navigation.php") ?>
 </head>
 
 <body class = "RPScontent">
