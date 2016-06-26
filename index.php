@@ -9,7 +9,7 @@
 
 
 	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-	<!-- Navigation -->
+
 		<?php include("navigation.php") ?>
 
 		<div class="content">

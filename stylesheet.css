@@ -31,12 +31,6 @@ body{
 	background-color:#C2F16E;
 	padding:10px;
 	height:80%;
-
-}
-.nav_item {
-	cursor: pointer;
-	padding:5px;
-	justify-content:center;
 }
 
 .content{
@@ -47,6 +41,17 @@ body{
 	float:right;
 	margin:-25px;
 	padding-top:40px;
+}
+
+.articleContent{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:75%;
+	float:right;
+	margin:-25px;
+	padding-top:40px;
+	background-color:#EBCDED;
 }
 
 .img{
@@ -67,10 +72,6 @@ a:hover {
 	color: red;
 }
 
-a:selected {
-	color:blue;
-	font-weight:bold;
-}
 
 .RPScontent{
 	display:flex;

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>		
-
-<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-
+<head>
+	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+</head>
 <div class= "nav">
 	<div class="nav_section1">
-		<div class="nav_item"><h2 style ="font-family: cursive"> Rachel Lyons</h2></div>
+		<h2 style ="font-family: cursive"> Rachel Lyons</h2>
 			<a href="https://www.facebook.com/rachel.lyons.359"><img src="fbIcon.jpeg"/></a>
 			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="inIcon.png"/></a>
 			<a href="https://github.com/rlyons21"><img src="githubSymbol.png"/></a>
@@ -22,7 +22,8 @@
 			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="the-web.php">The Web</a></p></li>
 		</ul>
 
 	 <?php } ?>
@@ -34,18 +35,8 @@
 			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a><p></div></li>
-		</ul>
-<?php } ?>
-
-<?php if($pageName == "hack-the-pentagon.php"){ ?>
-			<p><a href="index.php"> Home </a></p>
-			<p><a href="goals.php">  Goals  </a></p> 
-			<p><a href="Arkansas.php"> Arkansas </a></p> 
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav style="color:blue"> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="the-web.php">The Web</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -56,7 +47,8 @@
 			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="the-web.php">The Web</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -67,10 +59,34 @@
 			<p><strong><a href="index1.php" style="color:blue">Rock, Paper, Scissors</a></strong></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><div class="nav_item"><p><a href="../hack-the-pentagon.php" id=homenav> <q>Hack the Pentagon</q> </a></p></div></li>
+			<li><p><a href="../hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="../the-web.php">The Web</a></p></li>
 		</ul>
 <?php } ?>
 		
+<?php if($pageName == "hack-the-pentagon.php"){ ?>
+			<p><a href="index.php"> Home </a></p>
+			<p><a href="goals.php">  Goals  </a></p> 
+			<p><a href="Arkansas.php"> Arkansas </a></p> 
+			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
+			<p style="padding:2px"> Articles</p>
+		<ul>
+			<li><p><a href="hack-the-pentagon.php" style="color:blue">Hack the Pentagon</a></p></li>
+			<li><p><a href="the-web.php">The Web</a></p></li>
+		</ul>
+<?php } ?>
+
+<?php if($pageName == "the-web.php"){ ?>
+			<p><a href="index.php"> Home </a></p>
+			<p><a href="goals.php">  Goals  </a></p> 
+			<p><a href="Arkansas.php"> Arkansas </a></p> 
+			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
+			<p style="padding:2px"> Articles</p>
+		<ul>
+			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="the-web.php" style="color:blue">The Web</a></p></li>
+		</ul>
+<?php } ?>
 	</div>
 </div>
 	

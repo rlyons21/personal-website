@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<title> Hack the Pentagon | Rachel Lyons</title>
-	</head>
-	<body style="background-color: #EBCDED">
-	<div class="content">
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 		<?php include("navigation.php") ?>
-
-		<h4><em> What I Found Interesting & Questions Rainsed</em></h4>
+	</head>
+	<body>
+	<div class="articleContent">
+		<h3>Hack the Pentagon</h3>
+		<h4><em> What I Found Interesting & Questions Raised</em></h4>
 
 		<p><q>Hack the Pentagon</q> is a pilot project that the U.S. Department of Defense used to test for vulnerability in public Defense Department websites. It invited individuals to try hacking U.S. Department of Defense websites and report any vulnerabilities or security issues without getting in trouble.</p>
 
