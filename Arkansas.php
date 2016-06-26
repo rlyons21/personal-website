@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Arkansas | Rachel Lyons</title>
+		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+		<?php include("navigation.php") ?>
 	</head>
 	<body style="background-color:#ABB2B9">
 	<div class="content">
-		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-		
-		<?php include("navigation.php") ?>
 
 		<h3> Here are some pictures from my last 2 trips to Arkansas</h3>
 		<div class="img"><img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13254267_10206317572724575_8533562188905907741_n.jpg?oh=d3ee5dcd927892a785f8cb6ae9bf2f3e&oe=57CB08CF"/></div>

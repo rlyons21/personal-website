@@ -3,11 +3,11 @@
 
 <head>
 	<title> Rock, Paper, Scissors</title>
+	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+	<?php include("navigation.php") ?>
 </head>
 
 <body class = "RPScontent">
-	<?php include("../navigation.php") ?>
-	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
    	<?php 
     	$choices = array("rock", "paper", "scissors");
 		$comp_choice = $choices[rand(0,count($choices)-1)];
