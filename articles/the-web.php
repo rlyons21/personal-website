@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title> The Web | Rachel Lyons</title>
-		<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
-	</head>
+<?php $title = "The Web | Rachel Lyons" ?>
+<?php $pageName = "the-web.php" ?>
+<?php include("../top.php") ?>
+<?php include("../navigation.php") ?>
 
 	<body class="articleContent">
-		<?php $pageName = "the-web.php" ?>
-		<?php include("../navigation.php") ?>
+
 		<h3>The Web</h3>
 		<p>I started using the internet in school around 2nd grade. I didn’t know how it worked, I only knew that when my teacher told me to click somewhere that my screen would change in some way, shape or form. By 5th grade I was using it for both school and entertainment. By the time I got into high school I couldn’t imagine life without it, yet I was still oblivious as to how it all worked. </p>
 

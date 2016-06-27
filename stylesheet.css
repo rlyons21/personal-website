@@ -81,3 +81,24 @@ a:hover {
 	padding-top:40px;
 	background-color: #b6f8ff;
 }
+
+.TTTcontent{
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	width:75%;
+	float:right;
+	margin:-25px;
+	padding-top:40px;
+}
+
+	.TTTgame {
+    width: 300px;
+    height: 600px;
+}
+
+.TTTgame div {
+    width: 100px;
+    height: 100px;
+    outline: 1px solid;
+    float: left;

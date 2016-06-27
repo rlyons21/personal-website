@@ -9,17 +9,22 @@
 	</div>
 
 	<div class="nav_section2">
-	<li> <?php  if($pageName == "index.php") { ?> <b>Home</b> <?php }  
-					else { ?> <a href = "/index.php">Home</a> <?php } ?> </li> 
+	 <p><?php  if($pageName == "index.php") { ?> <b>Home</b> <?php }  
+					else { ?> <a href = "/index.php">Home</a> <?php } ?><p>
 				
-	<li> <?php	if($pageName == "goals.php") { ?> <b>Goals</b> <?php } 
-					else { ?> <a href = "/goals.php">Goals</a> <?php } ?> </li>
+	<p><?php	if($pageName == "goals.php") { ?> <b>Goals</b> <?php } 
+					else { ?> <a href = "/goals.php">Goals</a> <?php } ?><p>
 				
-	<li> <?php	if($pageName == "Arkansas.php") { ?> <b>Arkansas</b> <?php } 
-					else { ?> <a href = "/Arkansas.php">Arkansas</a> <?php } ?> </li>
-
+	<p><?php	if($pageName == "Arkansas.php") { ?> <b>Arkansas</b> <?php } 
+					else { ?> <a href = "/Arkansas.php">Arkansas</a> <?php } ?><p>
+	<h4><em> Projects</em></h4>
+	
 	<li> <?php	if($pageName == "index1.php" or $pageName == "winner.php") { ?> <b>Rock, Paper, Scissors</b> <?php } 
 					else { ?> <a href = "/RPS/index1.php">Rock, Paper, Scissors</a> <?php } ?> </li>	
+	<li> <?php	if($pageName == "index2.php") { ?> <b>Tic Tac Toe</b> <?php } 
+					else { ?> <a href = "/TTT/index2.php">Tic Tac Toe</a> <?php } ?> </li>
+	
+	<h4><em> Articles </em></h4>
 
 	<li> <?php	if($pageName == "hack-the-pentagon.php") { ?> <b>Hack the Pentagon</b> <?php } 
 					else { ?> <a href = "/articles/hack-the-pentagon.php">Hack the Pentagon</a> <?php } ?> </li>	
@@ -29,6 +34,6 @@
 
 	<li> <?php	if($pageName == "the-web.php") { ?> <b>The Web</b> <?php } 
 					else { ?> <a href = "/articles/the-web.php">The Web</a> <?php } ?> </li>		
-	
+		
 	</div>
 </div>

@@ -5,7 +5,7 @@
 		<title> Goals | Rachel Lyons</title>
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 	</head>
-	<body style="background-color:pink">
+	<body>
 	<?php $pageName = "goals.php" ?>
 	<?php include("navigation.php") ?>
 	<div class="content">
