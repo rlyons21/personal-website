@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Hack the Pentagon | Rachel Lyons</title>
-		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+		<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
 	</head>
 	<body class="articleContent">
-		<?php include("navigation.php") ?>
+		<?php include("../navigation.php") ?>
 		<h3>Hack the Pentagon</h3>
 		<h4><em> What I Found Interesting & Questions Raised</em></h4>
 

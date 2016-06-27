@@ -20,9 +20,9 @@
 			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="the-web.php">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
+			<li><p><a href="articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="articles/the-web.php">The Web</a></p></li>
+			<li><p><a href="articles/HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 
 	 <?php } ?>
@@ -34,9 +34,9 @@
 			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="the-web.php">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
+			<li><p><a href="articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="articles/the-web.php">The Web</a></p></li>
+			<li><p><a href="articles/HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -47,9 +47,9 @@
 			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="the-web.php">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
+			<li><p><a href="articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="articles/the-web.php">The Web</a></p></li>
+			<li><p><a href="articles/HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 
@@ -60,17 +60,17 @@
 			<p><strong><a href="index1.php" style="color:blue">Rock, Paper, Scissors</a></strong></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
-			<li><p><a href="../hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="../the-web.php">The Web</a></p></li>
-			<li><p><a href="../HTML-tags.php">HTML Tags</a></p></li>
+			<li><p><a href="../articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
+			<li><p><a href="../articles/the-web.php">The Web</a></p></li>
+			<li><p><a href="../articles/HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 		
 <?php if($pageName == "hack-the-pentagon.php"){ ?>
-			<p><a href="index.php"> Home </a></p>
-			<p><a href="goals.php">  Goals  </a></p> 
-			<p><a href="Arkansas.php"> Arkansas </a></p> 
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
+			<p><a href="../index.php"> Home </a></p>
+			<p><a href="../goals.php">  Goals  </a></p> 
+			<p><a href="../Arkansas.php"> Arkansas </a></p> 
+			<p><a href="../RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
 			<li><p><a href="hack-the-pentagon.php" style="color:blue">Hack the Pentagon</a></p></li>
@@ -80,10 +80,10 @@
 <?php } ?>
 
 <?php if($pageName == "the-web.php"){ ?>
-			<p><a href="index.php"> Home </a></p>
-			<p><a href="goals.php">  Goals  </a></p> 
-			<p><a href="Arkansas.php"> Arkansas </a></p> 
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
+			<p><a href="../index.php"> Home </a></p>
+			<p><a href="../goals.php">  Goals  </a></p> 
+			<p><a href="../Arkansas.php"> Arkansas </a></p> 
+			<p><a href="../RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
 			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
@@ -93,10 +93,10 @@
 <?php } ?>
 
 <?php if($pageName == "HTML-tags.php"){ ?>
-			<p><a href="index.php"> Home </a></p>
-			<p><a href="goals.php">  Goals  </a></p> 
-			<p><a href="Arkansas.php"> Arkansas </a></p> 
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
+			<p><a href="../index.php"> Home </a></p>
+			<p><a href="../goals.php">  Goals  </a></p> 
+			<p><a href="../Arkansas.php"> Arkansas </a></p> 
+			<p><a href="../RPS/index1.php">Rock, Paper, Scissors</a></p>
 			<p style="padding:2px"> Articles</p>
 		<ul>
 			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>

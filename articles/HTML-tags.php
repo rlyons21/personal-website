@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Tags | Rachel Lyons</title>
-	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
 </head>
 
 <body class="articleContent">
-	<?php include("navigation.php") ?>
+	<?php include("../navigation.php") ?>
 	
 	<h3>HTML Tags</h3>
 	<p>The &lt;html&gt; tag tells the browser that the file is an HTML document. All other HTML elements, excluding &lt;!DOCTYPE&gt;, are nested within &lt;html&gt; tags. Both the &lt;head&gt; and &lt;body&gt; tags (and their contents) are contained by &lt;html&gt; tags.</p>
