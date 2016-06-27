@@ -4,9 +4,15 @@
 <div class= "nav">
 	<div class="nav_section1">
 		<h2 style ="font-family: cursive"> Rachel Lyons</h2>
+		<?php if($pageName == "index.php" or $pageName=="goals.php" or $pageName == "Arkansas.php") ?>
 			<a href="https://www.facebook.com/rachel.lyons.359"><img src="fbIcon.jpeg" alt="Facebook"/></a>
 			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="inIcon.png" alt="LinkedIn"/></a>
 			<a href="https://github.com/rlyons21"><img src="githubSymbol.png" alt="GitHub"/></a>
+		<?php } else { ?>
+			<a href="https://www.facebook.com/rachel.lyons.359"><img src="../fbIcon.jpeg" alt="Facebook"/></a>
+			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="../inIcon.png" alt="LinkedIn"/></a>
+			<a href="https://github.com/rlyons21"><img src="../githubSymbol.png" alt="GitHub"/></a>
+		<?php } ?>
 	</div>
 
 	<div class="nav_section2">
