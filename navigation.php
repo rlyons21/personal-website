@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>		
-<head>
+
 	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-</head>
+
 <div class= "nav">
 	<div class="nav_section1">
 		<h2 style ="font-family: cursive"> Rachel Lyons</h2>
-			<a href="https://www.facebook.com/rachel.lyons.359"><img src="fbIcon.jpeg"/></a>
-			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="inIcon.png"/></a>
-			<a href="https://github.com/rlyons21"><img src="githubSymbol.png"/></a>
+			<a href="https://www.facebook.com/rachel.lyons.359"><img src="fbIcon.jpeg" alt="Facebook"/></a>
+			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="inIcon.png" alt="LinkedIn"/></a>
+			<a href="https://github.com/rlyons21"><img src="githubSymbol.png" alt="GitHub"/></a>
 	</div>
 
 	<div class="nav_section2">
@@ -64,7 +62,7 @@
 		<ul>
 			<li><p><a href="../hack-the-pentagon.php">Hack the Pentagon</a></p></li>
 			<li><p><a href="../the-web.php">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
+			<li><p><a href="../HTML-tags.php">HTML Tags</a></p></li>
 		</ul>
 <?php } ?>
 		
@@ -108,9 +106,3 @@
 <?php } ?>
 	</div>
 </div>
-	
-
-
-
-
-</html>

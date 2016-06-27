@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title> Goals | Rachel Lyons</title>
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-		<?php include("navigation.php") ?>
 	</head>
 	<body style="background-color:pink">
+	<?php include("navigation.php") ?>
 	<div class="content">
 
 		<h2 style="color:red; text-align:center; font-family:sans-serif;"> My Goals</h2>

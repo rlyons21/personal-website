@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title> Hack the Pentagon | Rachel Lyons</title>
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-		<?php include("navigation.php") ?>
 	</head>
 	<body class="articleContent">
+		<?php include("navigation.php") ?>
 		<h3>Hack the Pentagon</h3>
 		<h4><em> What I Found Interesting & Questions Raised</em></h4>
 
