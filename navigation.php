@@ -1,114 +1,34 @@
 
 	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 
+
 <div class= "nav">
 	<div class="nav_section1">
-		<h2 style ="font-family: cursive"> Rachel Lyons</h2>
-		<?php if($pageName == "index.php" or $pageName=="goals.php" or $pageName == "Arkansas.php") ?>
-			<a href="https://www.facebook.com/rachel.lyons.359"><img src="fbIcon.jpeg" alt="Facebook"/></a>
-			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="inIcon.png" alt="LinkedIn"/></a>
-			<a href="https://github.com/rlyons21"><img src="githubSymbol.png" alt="GitHub"/></a>
-		<?php } else { ?>
-			<a href="https://www.facebook.com/rachel.lyons.359"><img src="../fbIcon.jpeg" alt="Facebook"/></a>
-			<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="../inIcon.png" alt="LinkedIn"/></a>
-			<a href="https://github.com/rlyons21"><img src="../githubSymbol.png" alt="GitHub"/></a>
-		<?php } ?>
+		<h2 > Rachel Lyons</h2>
+		
 	</div>
 
 	<div class="nav_section2">
-		<?php $pageName = basename($_SERVER['PHP_SELF']); ?>
+	<li> <?php  if($pageName == "index.php") { ?> <b>Home</b> <?php }  
+					else { ?> <a href = "/index.php">Home</a> <?php } ?> </li> 
+				
+	<li> <?php	if($pageName == "goals.php") { ?> <b>Goals</b> <?php } 
+					else { ?> <a href = "/goals.php">Goals</a> <?php } ?> </li>
+				
+	<li> <?php	if($pageName == "Arkansas.php") { ?> <b>Arkansas</b> <?php } 
+					else { ?> <a href = "/Arkansas.php">Arkansas</a> <?php } ?> </li>
 
+	<li> <?php	if($pageName == "index1.php" or $pageName == "winner.php") { ?> <b>Rock, Paper, Scissors</b> <?php } 
+					else { ?> <a href = "/RPS/index1.php">Rock, Paper, Scissors</a> <?php } ?> </li>	
 
-<?php if($pageName == "index.php"){ ?>
-			<p><strong><a href="index.php" style="color:blue"> Home </a></strong></p>
-			<p><a href="goals.php">  Goals  </a><p>
-			<p><a href="Arkansas.php"> Arkansas </a></p>
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="articles/the-web.php">The Web</a></p></li>
-			<li><p><a href="articles/HTML-tags.php">HTML Tags</a></p></li>
-		</ul>
+	<li> <?php	if($pageName == "hack-the-pentagon.php") { ?> <b>Hack the Pentagon</b> <?php } 
+					else { ?> <a href = "/articles/hack-the-pentagon.php">Hack the Pentagon</a> <?php } ?> </li>	
 
-	 <?php } ?>
+	<li> <?php	if($pageName == "HTML-tags.php") { ?> <b>HTML Tags</b> <?php } 
+					else { ?> <a href = "/articles/HTML-tags.php">HTML Tags</a> <?php } ?> </li>
 
-<?php if($pageName == "goals.php"){ ?>
-			<p><a href="index.php"> Home </a><p>
-			<p><strong><a href="goals.php" style="color:blue">  Goals  </a></strong></p>
-			<p><a href="Arkansas.php"> Arkansas </a><p>
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="articles/the-web.php">The Web</a></p></li>
-			<li><p><a href="articles/HTML-tags.php">HTML Tags</a></p></li>
-		</ul>
-<?php } ?>
-
-	<?php if($pageName == "Arkansas.php"){ ?>
-			<p><a href="index.php"> Home </a></p> 
-			<p><a href="goals.php">  Goals  </a></p> 
-			<p><strong><a href="Arkansas.php" style="color:blue"> Arkansas </a></strong></p>
-			<p><a href="RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="articles/the-web.php">The Web</a></p></li>
-			<li><p><a href="articles/HTML-tags.php">HTML Tags</a></p></li>
-		</ul>
-<?php } ?>
-
-	<?php if($pageName == "index1.php" or $pageName == "winner.php"){ ?>
-			<p><a href="../index.php"> Home </a></p> 
-			<p><a href="../goals.php">  Goals  </a></p> 
-			<p><a href="../Arkansas.php"> Arkansas </a></p>
-			<p><strong><a href="index1.php" style="color:blue">Rock, Paper, Scissors</a></strong></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="../articles/hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="../articles/the-web.php">The Web</a></p></li>
-			<li><p><a href="../articles/HTML-tags.php">HTML Tags</a></p></li>
-		</ul>
-<?php } ?>
-		
-<?php if($pageName == "hack-the-pentagon.php"){ ?>
-			<p><a href="../index.php"> Home </a></p>
-			<p><a href="../goals.php">  Goals  </a></p> 
-			<p><a href="../Arkansas.php"> Arkansas </a></p> 
-			<p><a href="../RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="hack-the-pentagon.php" style="color:blue">Hack the Pentagon</a></p></li>
-			<li><p><a href="the-web.php">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
-		</ul>
-<?php } ?>
-
-<?php if($pageName == "the-web.php"){ ?>
-			<p><a href="../index.php"> Home </a></p>
-			<p><a href="../goals.php">  Goals  </a></p> 
-			<p><a href="../Arkansas.php"> Arkansas </a></p> 
-			<p><a href="../RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="the-web.php" style="color:blue">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php">HTML Tags</a></p></li>
-		</ul>
-<?php } ?>
-
-<?php if($pageName == "HTML-tags.php"){ ?>
-			<p><a href="../index.php"> Home </a></p>
-			<p><a href="../goals.php">  Goals  </a></p> 
-			<p><a href="../Arkansas.php"> Arkansas </a></p> 
-			<p><a href="../RPS/index1.php">Rock, Paper, Scissors</a></p>
-			<p style="padding:2px"> Articles</p>
-		<ul>
-			<li><p><a href="hack-the-pentagon.php">Hack the Pentagon</a></p></li>
-			<li><p><a href="the-web.php">The Web</a></p></li>
-			<li><p><a href="HTML-tags.php" style="color:blue">HTML Tags</a></p></li>
-		</ul>
-<?php } ?>
+	<li> <?php	if($pageName == "the-web.php") { ?> <b>The Web</b> <?php } 
+					else { ?> <a href = "/articles/the-web.php">The Web</a> <?php } ?> </li>		
+	
 	</div>
 </div>

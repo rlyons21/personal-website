@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Tags | Rachel Lyons</title>
-	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
+	<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
 </head>
 
 <body class="articleContent">
+	<?php $pageName = "HTML-tags.php" ?>
 	<?php include("../navigation.php") ?>
 	
 	<h3>HTML Tags</h3>

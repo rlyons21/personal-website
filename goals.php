@@ -6,6 +6,7 @@
 		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 	</head>
 	<body style="background-color:pink">
+	<?php $pageName = "goals.php" ?>
 	<?php include("navigation.php") ?>
 	<div class="content">
 

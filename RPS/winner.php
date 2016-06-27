@@ -4,10 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title> Rock, Paper, Scissors</title>
-	<link type= "text/css" rel = "stylesheet" href= "../stylesheet.css">
+	<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
 </head>
 
 <body class = "RPScontent">
+	<?php $pageName = "winner.php" ?>
 	<?php include("../navigation.php") ?>
    	<?php 
     	$choices = array("rock", "paper", "scissors");

@@ -8,6 +8,7 @@
 	</head>
 
 	<body id = home style = "background-color:#BEF4DE">
+		<?php $pageName = "index.php" ?>
 		<?php include("navigation.php") ?>
 		<div class="content">
 			<h2><em> About Me </em></h2>
