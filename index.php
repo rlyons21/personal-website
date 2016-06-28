@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Rachel Lyons | Home</title>
-		<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
-	</head>
+<?php $title = "Home" ?>
+<?php $pageName = "index.php" ?>
+<?php include("top.php") ?>
+<?php include("navigation.php") ?>
 
 	<body id = home style = "background-color:#BEF4DE">
-		<?php $pageName = "index.php" ?>
-		<?php include("navigation.php") ?>
+
 		<div class="content">
 			<h2><em> About Me </em></h2>
 

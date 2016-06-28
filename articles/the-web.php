@@ -1,4 +1,4 @@
-<?php $title = "The Web | Rachel Lyons" ?>
+<?php $title = "The Web" ?>
 <?php $pageName = "the-web.php" ?>
 <?php include("../top.php") ?>
 <?php include("../navigation.php") ?>

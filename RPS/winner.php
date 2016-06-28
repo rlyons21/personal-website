@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<title> Rock, Paper, Scissors</title>
-	<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
-</head>
+<?php $title = "Rock, Paper, Scissors" ?>
+<?php $pageName = "winner.php" ?>
+<?php include("../top.php") ?>
+<?php include("../navigation.php") ?>
 
 <body class = "RPScontent">
-	<?php $pageName = "winner.php" ?>
-	<?php include("../navigation.php") ?>
-	<?php include("../functions.php") ?>
+
    	<?php 
     	$choices = array("rock", "paper", "scissors");
 		$comp_choice = $choices[rand(0,count($choices)-1)];
