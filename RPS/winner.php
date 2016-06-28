@@ -1,7 +1,9 @@
-<?php $title = "Rock, Paper, Scissors" ?>
-<?php $pageName = "winner.php" ?>
-<?php include("../top.php") ?>
-<?php include("../navigation.php") ?>
+<?php $title = "Rock, Paper, Scissors"; ?>
+<?php $pageName = "winner.php"; ?>
+<?php include("../top.php"); ?>
+<?php include("../navigation.php"); ?>
+<?php include("../functions.php"); ?>
+
 
 <body class = "RPScontent">
 
@@ -17,9 +19,12 @@
 				<input type="submit" value="Choose again!">
 			</form>
 
-	<?php	} ?>	
+	<?php	} else {?>	
 
-	<?php RPSfindWinner($user_choice,$comp_choice) ?>
+		<p> You chose <?php echo $user_choice ?>.</p>
+		<p> Computer chose <?php echo $comp_choice ?>.</p>
+	<?php echo RPSfindWinner($user_choice,$comp_choice); ?>
+	<?php RPSform(); }?>
 	
 
 </body>

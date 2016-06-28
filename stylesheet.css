@@ -43,6 +43,10 @@ body {
 	padding-top:40px;
 }
 
+#home {
+	background-color:#BEF4DE
+}
+
 .articleContent{
 	display:flex;
 	flex-direction:column;
@@ -92,7 +96,7 @@ a:hover {
 	padding-top:40px;
 }
 
-	.TTTgame {
+.TTTgame {
     width: 300px;
     height: 600px;
 }

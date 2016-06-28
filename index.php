@@ -3,7 +3,7 @@
 <?php include("top.php") ?>
 <?php include("navigation.php") ?>
 
-	<body id = home style = "background-color:#BEF4DE">
+	<body id = "home">
 
 		<div class="content">
 			<h2><em> About Me </em></h2>

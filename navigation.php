@@ -5,6 +5,9 @@
 <div class= "nav">
 	<div class="nav_section1">
 		<h2 > Rachel Lyons</h2>
+		<a href="https://www.facebook.com/rachel.lyons.359"><img src="/icons/fbIcon.jpeg" alt="Facebook"/></a>
+		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/icons/inIcon.png" alt="LinkedIn"/></a>
+		<a href="https://github.com/rlyons21"><img src="/icons/githubSymbol.png" alt="GitHub"/></a>
 		
 	</div>
 

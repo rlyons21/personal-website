@@ -12,61 +12,25 @@ function RPSform(){ ?>
 
 <?php 
 # Finds the winner of a game of RPS
-# prints both weapons used and winner
-# produces play again button
+# returns who won or if a tie
 
 function RPSfindWinner($user_choice,$comp_choice){ ?>
 <?php
-		if($user_choice == $comp_choice){ ?>
-			<p> You and the computer both chose <?php echo $user_choice ?>.</p> 
-			<form action="index1.php">
-				<input type="submit" value="Choose again!">
-			</form>
-	<?php } ?>
+		if($user_choice == $comp_choice){ 
+			return  "It's a tie!"; 
+	 } ?>
 
-	<?php if($user_choice == "rock" and $comp_choice == "paper"){ ?>
-		<p> You chose rock.</p>
-		<p> Computer chose paper.</p>
-		<h1> Computer Won!</h1>
-		<?php RPSform() ?>
-	<?php } ?>
+	<?php if($user_choice == "rock" && $comp_choice == "paper" ||
+			$user_choice == "paper" && $comp_choice == "scissors" ||
+			$user_choice == "scissors" && $comp_choice == "rock"){
+		return "Computer Won!";
+	 } 
 
 
-	<?php if($user_choice == "rock" and $comp_choice == "scissors"){ ?>
-		<p> You chose rock.</p>
-		<p> Computer chose scissors.</p>
-		<h1> You Won!</h1>
-		<?php RPSform() ?>
-	<?php } ?>
-
-
-	<?php if($user_choice == "paper" and $comp_choice == "scissors"){ ?>
-		<p> You chose paper.</p>
-		<p> Computer chose scissors.</p>
-		<h1> Computer Won!</h1>
-		<?php RPSform() ?>
-	<?php } ?>
-
-
-	<?php if($user_choice == "paper" and $comp_choice == "rock"){ ?>
-		<p> You chose paper. Computer chose rock.</p>
-		<h1> You Won!</h1>
-		<?php RPSform() ?>
-	<?php } ?>
-
-
-	<?php if($user_choice == "scissors" and $comp_choice == "rock"){ ?>
-		<p> You chose scissors.</p>
-		<p> Computer chose rock.</p>
-		<h1> Computer Won!</h1>
-		<?php RPSform() ?>
-	<?php } ?>
-			
-
-	<?php if($user_choice == "scissors" and $comp_choice == "paper"){ ?>
-		<p> You chose scissors.</p>
-		<p> Computer chose paper.</p>
-		<h1> You Won!</h1>
-		<?php RPSform() ?>
-	<?php } 
+	if($user_choice == "rock" && $comp_choice == "scissors" ||
+		$user_choice == "paper" && $comp_choice == "rock" ||
+		$user_choice == "scissors" && $comp_choice == "paper"){ 
+		return "You Won!";
+	 } 
+ 
 } ?>
