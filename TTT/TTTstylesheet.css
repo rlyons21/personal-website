@@ -1,0 +1,65 @@
+.TTTcontent {
+  font-family: serif;
+  background-color: #DFC3FA;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  width:75%;
+  float:right;
+  align-items: center;
+  padding-top:40px;
+}
+
+.square {
+  display: block;
+  float: left;
+  height: 64px;
+  width: 64px;
+  line-height: 64px;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.square:nth-child(3n+1) {
+  clear: both;
+}
+
+.square:nth-child(3n) {
+  border-right: none;
+}
+
+.square:nth-child(n + 7) {
+  border-bottom: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.reset {
+  display: block;
+  border: 1px solid black;
+  margin-top: 32px;
+  width: 128px;
+  text-align: center;
+  clear: both;
+  background-color:#D5F5E3;
+  
+}
+
+.grid {
+  height: 194px;
+  width: 194px;
+}
+
+.winner {
+  width: 194px;
+  text-align: center;
+  clear: both;
+  height: 64px;
+  line-height: 64px;
+}
