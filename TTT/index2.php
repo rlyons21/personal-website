@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php $pageName = "index2.php" ?>
 <?php include 'TTTfunctions.php' ?>
 <?php include '../navigation.php' ?>
@@ -13,10 +14,15 @@
 
 <div class="grid">
 <?php
+  if($_GET["reset"]){
+    $_SESSION = null;
+  }
+
   parse_str($_SERVER['QUERY_STRING'], $query);
   $grid = isset($query['grid']) ? $query['grid'] : "000000000";
   $player = isset($query['player']) ? $query['player'] : 1;
   $winner = checkWinner($grid);
+  $results = trackResults($grid);
   printGrid($grid, $player, $winner);
 ?></div>
 
@@ -29,7 +35,15 @@ HTML;
   }
 ?>
 
-  <a href="index2.php" class="reset">Reset</a>
+  <a href="index2.php" class="reset">Play Again!</a>
+  <a href="index2.php?reset=true" class="reset"> Reset</a>
+
+ 
+     <p> <?php echo "X-Victories:  ", $results[0]; ?> </p>
+     <p> <?php echo "O-Victories:  ", $results[1]; ?> </p>
+     <p> <?php echo "Cat's Games:  ", $results[2]; ?> </p>
+
+
 
 </body>
 </html>

@@ -1,4 +1,5 @@
-<?php 
+
+<?php
 # Determines if a square should be empty, X or O
 
 # $num represents a square on the board, it will equal 0,1 or
@@ -82,6 +83,8 @@ HTML;
 
 # Returns "its a draw!!", "x wins!!", "o wins!!", or nothing 
 # to $winner.
+
+
   function checkWinner($grid) {
     $wins = [];
 
@@ -105,5 +108,26 @@ HTML;
     if(strpos($grid,"0")===false){
       return "It's a draw!!";
     }
+  }
+
+
+function trackResults($grid){
+    if (empty($_SESSION)){
+      $_SESSION["Xwins"] = 0;
+      $_SESSION["Owins"] = 0;
+      $_SESSION["draws"] = 0;
+    }
+
+    if (checkWinner($grid) == "X Wins!!"){
+      $_SESSION["Xwins"] += 1;
+    }
+    elseif (checkWinner($grid) == "O Wins!!"){
+      $_SESSION["Owins"] += 1;
+    }
+    elseif (checkWinner($grid) == "It's a draw!!"){
+      $_SESSION["draws"] += 1;
+    } 
+
+    return array($_SESSION["Xwins"], $_SESSION["Owins"], $_SESSION["draws"]);
   }
 ?>
