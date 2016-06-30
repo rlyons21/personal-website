@@ -83,9 +83,6 @@ HTML;
 # Returns "its a draw!!", "x wins!!", "o wins!!", or nothing 
 # to $winner.
   function checkWinner($grid) {
-    if(strpos($grid,"0")===false){
-      return "It's a draw!!";
-    }
     $wins = [];
 
     $wins[0] = $grid[0] . $grid[1] . $grid[2];
@@ -104,6 +101,9 @@ HTML;
       elseif($way_to_win == 222){
         return "O Wins!!";
       }
+    }
+    if(strpos($grid,"0")===false){
+      return "It's a draw!!";
     }
   }
 ?>

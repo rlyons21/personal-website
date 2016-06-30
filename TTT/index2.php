@@ -1,5 +1,5 @@
 <?php $pageName = "index2.php" ?>
-<?php include 'functions.php' ?>
+<?php include 'TTTfunctions.php' ?>
 <?php include '../navigation.php' ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +29,7 @@ HTML;
   }
 ?>
 
-  <a href="index.php" class="reset">Reset</a>
+  <a href="index2.php" class="reset">Reset</a>
 
 </body>
 </html>
