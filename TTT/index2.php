@@ -19,11 +19,23 @@
   }
 
   parse_str($_SERVER['QUERY_STRING'], $query);
-  $grid = isset($query['grid']) ? $query['grid'] : "000000000";
-  $player = isset($query['player']) ? $query['player'] : 1;
+  $grid = isset($query['grid']) ? $query['grid'] : "0000000001";
+  $player = $grid[9];
+  $count = 0;
   $winner = checkWinner($grid);
   $results = trackResults($grid);
-  printGrid($grid, $player, $winner);
+
+
+if($player == "1"){
+   printGrid($grid, $player, $winner);
+}
+
+if($player == "2"){
+   $newGrid = compMove($grid,$winner, $player);
+   printGrid($newGrid,$player,$winner);
+ } 
+
+  
 ?></div>
 
 <?php

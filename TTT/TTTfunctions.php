@@ -48,11 +48,12 @@
 
     if (isItEmpty($grid, $square, $winner)) {
     
-      $nextPlayer = ($player == 1) ? 2 : 1;
+      if($grid[9] == "1"){ $grid[9] = "2";}
+      elseif($grid[9] == "2"){$grid[9] ="1";}
       $newGrid = substr_replace($grid, $player, $square, 1);
 
       echo <<<HTML
-        <a class="square" href="?grid=$newGrid&player=$nextPlayer">$mark</a>
+        <a class="square" href="?grid=$newGrid">$mark</a>
 HTML;
     } else {
       echo <<<HTML
@@ -115,7 +116,7 @@ HTML;
 # grid is a 9-digit string that represents each square on the
 # board(0=empty, 1= x, 2= O).
 
-# returns an array with 3 numbers, one for X, one
+# returns
 
 function trackResults($grid){
     if (empty($_SESSION)){
@@ -135,5 +136,23 @@ function trackResults($grid){
     } 
 
     return array($_SESSION["Xwins"], $_SESSION["Owins"], $_SESSION["draws"]);
+  }
+
+
+
+
+
+
+
+  function compMove($grid, $winner,$player){
+      $square = (string)rand(0,8);
+      while($grid[$square] != "0"){
+        $square = (string)rand(0,8);
+      }
+      
+
+      $newGrid = substr_replace($grid, $player, $square, 1);
+      return $newGrid;
+
   }
 ?>
