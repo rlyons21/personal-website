@@ -39,9 +39,10 @@ HTML;
   <a href="index2.php?reset=true" class="reset"> Reset</a>
 
  
-     <p> <?php echo "X-Victories:  ", $results[0]; ?> </p>
-     <p> <?php echo "O-Victories:  ", $results[1]; ?> </p>
-     <p> <?php echo "Cat's Games:  ", $results[2]; ?> </p>
+     <div><p class ="results"> <?php echo "X-Victories:  ", $results[0]; ?> </p></div>
+     <div><p class= "results"> <?php echo "O-Victories:  ", $results[1]; ?> </p></div>
+     <div><p class = "results"> <?php echo "Cat's Games:  ", $results[2]; ?> </p></div>
+     
 
 
 

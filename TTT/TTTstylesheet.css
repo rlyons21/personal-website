@@ -1,6 +1,6 @@
 .TTTcontent {
   font-family: serif;
-  background-color: #BBB0C6;
+  background-color: #124815;
   display:flex;
   flex-direction:column;
   height:100%;
@@ -13,27 +13,17 @@
 .square {
   display: block;
   float: left;
-  height: 64px;
-  width: 64px;
-  line-height: 64px;
+  height: 80px;
+  width: 80px;
+  line-height: 100px;
   text-align: center;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid #124815;
   font-size: 32px;
   font-weight: bold;
+  background-color: #2C8930;
+  color:white;
 }
 
-.square:nth-child(3n+1) {
-  clear: both;
-}
-
-.square:nth-child(3n) {
-  border-right: none;
-}
-
-.square:nth-child(n + 7) {
-  border-bottom: none;
-}
 
 a {
   text-decoration: none;
@@ -52,8 +42,8 @@ a {
 }
 
 .grid {
-  height: 194px;
-  width: 194px;
+  height: 250px;
+  width: 250px;
 }
 
 .winner {
@@ -62,4 +52,8 @@ a {
   clear: both;
   height: 64px;
   line-height: 64px;
+}
+
+.results{
+  margin: 2px;
 }

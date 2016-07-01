@@ -110,6 +110,12 @@ HTML;
     }
   }
 
+# Keeps track of how many wins each player has and how many draws
+
+# grid is a 9-digit string that represents each square on the
+# board(0=empty, 1= x, 2= O).
+
+# returns an array with 3 numbers, one for X, one
 
 function trackResults($grid){
     if (empty($_SESSION)){
