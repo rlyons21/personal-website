@@ -51,9 +51,9 @@ HTML;
   <a href="index2.php?reset=true" class="reset"> Reset</a>
 
  
-     <div><p class ="results"> <?php echo "X-Victories:  ", $results[0]; ?> </p></div>
-     <div><p class= "results"> <?php echo "O-Victories:  ", $results[1]; ?> </p></div>
-     <div><p class = "results"> <?php echo "Cat's Games:  ", $results[2]; ?> </p></div>
+     <div class ="results"> <?php echo "X-Victories:  ", $results[0]; ?> </div>
+     <div class= "results"> <?php echo "O-Victories:  ", $results[1]; ?> </div>
+     <div class = "results"> <?php echo "Cat's Games:  ", $results[2]; ?> </div>
      
 
 
