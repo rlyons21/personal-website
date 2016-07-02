@@ -49,7 +49,7 @@
     if (isItEmpty($grid, $square, $winner)) {
     
       if($grid[9] == "1"){ $grid[9] = "2";}
-      elseif($grid[9] == "2"){$grid[9] ="1";}
+      elseif($grid[9]=="2"){$grid[9] ="1";}
       $newGrid = substr_replace($grid, $player, $square, 1);
 
       echo <<<HTML
@@ -137,12 +137,6 @@ function trackResults($grid){
 
     return array($_SESSION["Xwins"], $_SESSION["Owins"], $_SESSION["draws"]);
   }
-
-
-
-
-
-
 
   function compMove($grid, $winner,$player){
       $square = (string)rand(0,8);

@@ -1,7 +1,6 @@
 <?php session_start(); ?>
 <?php $pageName = "index2.php" ?>
 <?php include 'TTTfunctions.php' ?>
-<?php include '../navigation.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,11 +11,13 @@
 </head>
 <body class = TTTcontent>
 
+
 <div class="grid">
 <?php
   if($_GET["reset"]){
     $_SESSION = null;
   }
+
 
   parse_str($_SERVER['QUERY_STRING'], $query);
   $grid = isset($query['grid']) ? $query['grid'] : "0000000001";
@@ -25,15 +26,18 @@
   $winner = checkWinner($grid);
   $results = trackResults($grid);
 
+if($player == "2"){
+   $grid = compMove($grid,$winner, $player);
+   printGrid($grid,$player,$winner);
+   $player = "1";
+ } 
 
 if($player == "1"){
    printGrid($grid, $player, $winner);
+   
 }
 
-if($player == "2"){
-   $newGrid = compMove($grid,$winner, $player);
-   printGrid($newGrid,$player,$winner);
- } 
+ 
 
   
 ?></div>
@@ -51,9 +55,9 @@ HTML;
   <a href="index2.php?reset=true" class="reset"> Reset</a>
 
  
-     <div class ="results"> <?php echo "X-Victories:  ", $results[0]; ?> </div>
-     <div class= "results"> <?php echo "O-Victories:  ", $results[1]; ?> </div>
-     <div class = "results"> <?php echo "Cat's Games:  ", $results[2]; ?> </div>
+     <div class ="results__item"> <?php echo "X-Wins:  ", $results[0]; ?> </div> 
+     <div class= "results__item"> <?php echo "O-Wins:  ", $results[1]; ?> </div>
+     <div class = "results__item"> <?php echo "Draws:  ", $results[2]; ?> </div>
      
 
 
