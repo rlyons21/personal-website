@@ -22,19 +22,25 @@
   parse_str($_SERVER['QUERY_STRING'], $query);
   $grid = isset($query['grid']) ? $query['grid'] : "0000000001";
   $player = $grid[9];
-  $count = 0;
   $winner = checkWinner($grid);
   $results = trackResults($grid);
 
-if($player == "2"){
+
+
+if($player == "2") {
+  if(isset($winner) == true){
+    printGrid($grid,$player,$winner);
+  }else {
    $grid = compMove($grid,$winner, $player);
-   printGrid($grid,$player,$winner);
    $player = "1";
- } 
+   $winner = checkWinner($grid);
+   $results= trackResults($grid);
+ }
+} 
 
 if($player == "1"){
    printGrid($grid, $player, $winner);
-   
+   $player = "2";
 }
 
  

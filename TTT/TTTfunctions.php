@@ -49,7 +49,7 @@
     if (isItEmpty($grid, $square, $winner)) {
     
       if($grid[9] == "1"){ $grid[9] = "2";}
-      elseif($grid[9]=="2"){$grid[9] ="1";}
+      
       $newGrid = substr_replace($grid, $player, $square, 1);
 
       echo <<<HTML
