@@ -38,7 +38,10 @@
 					else { ?> <a href = "/articles/HTML-tags.php">HTML Tags</a> <?php } ?> </li>
 
 	<li> <?php	if($pageName == "the-web.php") { ?> <b>The Web</b> <?php } 
-					else { ?> <a href = "/articles/the-web.php">The Web</a> <?php } ?> </li>		
+					else { ?> <a href = "/articles/the-web.php">The Web</a> <?php } ?> </li>
+
+	<li> <?php	if($pageName == "tic-tac-toe.php") { ?> <b>Tackling Tic-Tac-Toe</b> <?php } 
+					else { ?> <a href = "/articles/tic-tac-toe.php">Tackling Tic-Tac-Toe</a> <?php } ?> </li>		
 		
 	</div>
 </div>
