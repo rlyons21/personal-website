@@ -40,6 +40,9 @@
 	<li> <?php	if($pageName == "the-web.php") { ?> <b>The Web</b> <?php } 
 					else { ?> <a href = "/articles/the-web.php">The Web</a> <?php } ?> </li>
 
+	<li> <?php	if($pageName == "paths.php") { ?> <b>Paths: include() and href</b> <?php } 
+					else { ?> <a href = "/articles/paths.php">Paths: include() and href</a> <?php } ?> </li>
+
 	<li> <?php	if($pageName == "tic-tac-toe.php") { ?> <b>Tackling Tic-Tac-Toe</b> <?php } 
 					else { ?> <a href = "/articles/tic-tac-toe.php">Tackling Tic-Tac-Toe</a> <?php } ?> </li>		
 		
