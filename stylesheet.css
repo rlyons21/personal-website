@@ -56,6 +56,13 @@ body {
 	padding-top:40px;
 	background-color:#ebcded;
 }
+.articleContent__Ps {
+	margin:3px;
+}
+.articleContent__indent {
+	margin:3px;
+	padding-left: 20px;
+}
 
 .img{
 	display:flex;
