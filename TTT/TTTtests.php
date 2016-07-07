@@ -3,7 +3,7 @@
 include 'TTTfunctions.php';
 
 echo "\nTesting that X wins";
-$grid = "111221122";
+$grid = "XXXOOXXOO";
 if(checkWinner($grid) == "X Wins!!"){
 	echo "\nnSuccess!";
 } else {
@@ -12,7 +12,7 @@ if(checkWinner($grid) == "X Wins!!"){
 
 
 echo "\n\n\nTesting that O wins";
-$grid = "112221201";
+$grid = "XXOOOXO-X";
 if(checkWinner($grid) == "O Wins!!"){
 	echo "\nSuccess!";
 } else {
@@ -21,7 +21,7 @@ if(checkWinner($grid) == "O Wins!!"){
 
 
 echo "\n\n\nTesting that its a draw";
-$grid = "121122211";
+$grid = "XOXXOOOXX";
 if(checkWinner($grid) == "It's a draw!!"){
 	echo "\nSuccess!";
 } else {

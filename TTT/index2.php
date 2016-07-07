@@ -34,6 +34,10 @@
   $file_connection_current = fopen($current, "w") or die("Error opening file");
   $file_connection_s = fopen($storage, "a") or die("Error opening file");
 
+
+
+
+
 if($player == "O") {
   if(isset($winner) == true){
     printGrid($grid,$player,$winner);

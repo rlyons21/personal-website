@@ -3,11 +3,11 @@
 # Determines if a square should be empty, X or O
 
 # $chr represents a square on the board, it will equal -,X or
-#O. It comes from $grid
+# O. It comes from $grid
 
 # Returns what mark, if any, to place in a square
 
-  function whatMark ($chr) {
+function whatMark ($chr) {
     switch ($chr) {
       case "X":
         return "X";
@@ -19,7 +19,7 @@
         return "";
         break;
     }
-  }
+}
 
 # Determine if a player can mark a given square
 
@@ -30,9 +30,9 @@
 
 # returns true if a player can mark the square, returns false
 #if they cant
-  function isItEmpty($grid, $square, $winner) {
+function isItEmpty($grid, $square, $winner) {
     return $grid[$square] == "-" && !isset($winner);
-  }
+}
 
 # Prints each square of the grid and switches players
 
@@ -43,7 +43,7 @@
 
 #Creates a square with its contents using HTML
 
-  function printSquare($grid, $square, $player, $winner) {
+function printSquare($grid, $square, $player, $winner) {
     $mark = whatMark($grid[$square]);
 
     if (isItEmpty($grid, $square, $winner)) {
@@ -58,7 +58,7 @@ HTML;
         <div class="square">$mark</div>   
 HTML;
     }
-  }
+}
 
 
 #prints the entire grid
@@ -69,11 +69,11 @@ HTML;
 
 ##Creates the grid with all of the squares using HTML
 
-  function printGrid($grid, $player, $winner) {
+function printGrid($grid, $player, $winner) {
     for ($i = 0; $i < 9; $i++) {
       printSquare($grid, $i, $player, $winner);
     }
-  }
+}
 
 
 # Checks for a winner or draw
@@ -83,9 +83,7 @@ HTML;
 
 # Returns "its a draw!!", "x wins!!", "o wins!!", or nothing 
 # to $winner.
-
-
-  function checkWinner($grid) {
+function checkWinner($grid) {
     $wins = [];
 
     $wins[0] = $grid[0] . $grid[1] . $grid[2];
@@ -108,14 +106,15 @@ HTML;
     if(strpos($grid,"-")===false){
       return "It's a draw!!";
     }
-  }
+}
+
 
 # Keeps track of how many wins each player has and how many draws
 
 # grid is a 9-digit string that represents each square on the
-# board(0=empty, 1= x, 2= O).
+# board(0=empty, 1= x, 2= O). $records is an array that holds the session values
 
-# returns
+# returns an array holding the session values of Xwins, Owins and draws
 
 function trackResults($grid, $records){
 
@@ -130,18 +129,26 @@ function trackResults($grid, $records){
     } 
 
     return array($_SESSION["Xwins"], $_SESSION["Owins"], $_SESSION["draws"]);
-  }
+}
 
-  function compMove($grid, $winner,$player){
+
+
+# Randomly chooses an available square for the computer to mark
+
+#$grid is a 9-digit string that represents each square on the
+#board(0=empty, 1= x, 2= O). $player represents whos turn it is
+#$winner a varriable that is not set until X or O wins 
+
+# returns the updated grid that includes the computers move
+function compMove($grid, $winner,$player){
       $square = (string)rand(0,8);
       while($grid[$square] != "-"){
         $square = (string)rand(0,8);
       }
       
-
       $newGrid = substr_replace($grid, $player, $square, 1);
       return $newGrid;
 
-  }
+}
 
 ?>
