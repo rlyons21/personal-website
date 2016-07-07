@@ -6,7 +6,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href = "../stylesheet.css">
   <link rel="stylesheet" href="TTTstylesheet.css">
 </head>
 <body class = TTTcontent>
@@ -18,39 +17,46 @@
     $_SESSION = null;
   }
 
+  if (empty($_SESSION)){
+      $_SESSION["Xwins"] = 0;
+      $_SESSION["Owins"] = 0;
+      $_SESSION["draws"] = 0;
+    }
 
   parse_str($_SERVER['QUERY_STRING'], $query);
-  $grid = isset($query['grid']) ? $query['grid'] : "0000000001";
+  $grid = isset($query['grid']) ? $query['grid'] : "---------X";
   $player = $grid[9];
   $winner = checkWinner($grid);
-  $results = trackResults($grid);
+  $results = trackResults($grid, $_SESSION);
+  
+  $current = "TTTcurrent.txt";
+  $storage = "TTTstorage.txt";
+  $file_connection_current = fopen($current, "w") or die("Error opening file");
+  $file_connection_s = fopen($storage, "a") or die("Error opening file");
 
-
-
-if($player == "2") {
+if($player == "O") {
   if(isset($winner) == true){
     printGrid($grid,$player,$winner);
   }else {
    $grid = compMove($grid,$winner, $player);
-   $player = "1";
+   $player = "X";
    $winner = checkWinner($grid);
-   $results= trackResults($grid);
+   $results= trackResults($grid, $_SESSION);
+   fwrite($file_connection_current, substr($grid,0,9),"\n");
  }
 } 
 
-if($player == "1"){
+if($player == "X"){
    printGrid($grid, $player, $winner);
-   $player = "2";
-}
-
- 
-
+   fwrite($file_connection_current, substr($grid,0,9));
+ }
   
 ?></div>
 
 <?php
   
   if ($winner) {
+    fwrite($file_connection_s, substr($grid,0,9)."\n");
     echo <<<HTML
       <div class="winner">$winner</div>
 HTML;
@@ -65,7 +71,8 @@ HTML;
      <div class= "results__item"> <?php echo "O-Wins:  ", $results[1]; ?> </div>
      <div class = "results__item"> <?php echo "Draws:  ", $results[2]; ?> </div>
      
-
+<?php fclose($file_connection_c);
+      fclose($file_connection_s); ?>
 
 
 </body>

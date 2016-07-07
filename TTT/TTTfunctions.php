@@ -2,17 +2,17 @@
 <?php
 # Determines if a square should be empty, X or O
 
-# $num represents a square on the board, it will equal 0,1 or
-#2. It comes from $grid
+# $chr represents a square on the board, it will equal -,X or
+#O. It comes from $grid
 
 # Returns what mark, if any, to place in a square
 
-  function whatMark ($num) {
-    switch ($num) {
-      case 1:
+  function whatMark ($chr) {
+    switch ($chr) {
+      case "X":
         return "X";
         break;
-      case 2:
+      case "O":
         return "O";
         break;
       default:
@@ -31,7 +31,7 @@
 # returns true if a player can mark the square, returns false
 #if they cant
   function isItEmpty($grid, $square, $winner) {
-    return $grid[$square] == 0 && !isset($winner);
+    return $grid[$square] == "-" && !isset($winner);
   }
 
 # Prints each square of the grid and switches players
@@ -47,9 +47,7 @@
     $mark = whatMark($grid[$square]);
 
     if (isItEmpty($grid, $square, $winner)) {
-    
-      if($grid[9] == "1"){ $grid[9] = "2";}
-      
+      if($grid[9] == "X"){ $grid[9] = "O";}
       $newGrid = substr_replace($grid, $player, $square, 1);
 
       echo <<<HTML
@@ -77,6 +75,7 @@ HTML;
     }
   }
 
+
 # Checks for a winner or draw
 
 # grid is a 9-digit string that represents each square on the
@@ -99,14 +98,14 @@ HTML;
     $wins[7] = $grid[2] . $grid[4] . $grid[6];
 
     foreach ($wins as $way_to_win) {
-      if ($way_to_win == 111) {
+      if ($way_to_win == "XXX") {
         return "X Wins!!";
       }
-      elseif($way_to_win == 222){
+      elseif($way_to_win == "OOO"){
         return "O Wins!!";
       }
     }
-    if(strpos($grid,"0")===false){
+    if(strpos($grid,"-")===false){
       return "It's a draw!!";
     }
   }
@@ -118,12 +117,7 @@ HTML;
 
 # returns
 
-function trackResults($grid){
-    if (empty($_SESSION)){
-      $_SESSION["Xwins"] = 0;
-      $_SESSION["Owins"] = 0;
-      $_SESSION["draws"] = 0;
-    }
+function trackResults($grid, $records){
 
     if (checkWinner($grid) == "X Wins!!"){
       $_SESSION["Xwins"] += 1;
@@ -140,7 +134,7 @@ function trackResults($grid){
 
   function compMove($grid, $winner,$player){
       $square = (string)rand(0,8);
-      while($grid[$square] != "0"){
+      while($grid[$square] != "-"){
         $square = (string)rand(0,8);
       }
       
@@ -149,4 +143,5 @@ function trackResults($grid){
       return $newGrid;
 
   }
+
 ?>
