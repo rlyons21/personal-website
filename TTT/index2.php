@@ -15,6 +15,7 @@
 <?php
   if($_GET["reset"]){
     $_SESSION = null;
+    file_put_contents("TTTstorage.txt","");
   }
 
   if (empty($_SESSION)){

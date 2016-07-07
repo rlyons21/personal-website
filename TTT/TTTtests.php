@@ -5,9 +5,9 @@ include 'TTTfunctions.php';
 echo "\nTesting that X wins";
 $grid = "XXXOOXXOO";
 if(checkWinner($grid) == "X Wins!!"){
-	echo "\nnSuccess!";
+	echo "\nSuccess!";
 } else {
-	echo "\nnFailure";
+	echo "\nFailure";
 }
 
 
