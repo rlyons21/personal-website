@@ -10,8 +10,6 @@
 </head>
 <body class = TTTcontent>
 
-
-<div class="grid">
 <?php
   if($_GET["playAgain"]){
     $_SESSION["player"] = "X";
@@ -39,11 +37,10 @@
   $current = "TTTcurrent.txt";
   $storage = "TTTstorage.txt";
   $file_connection_current = fopen($current, "w") or die("Error opening file");
-  $file_connection_s = fopen($storage, "a") or die("Error opening file");
+  $file_connection_s = fopen($storage, "a") or die("Error opening file"); ?>
 
-
-
-
+<div class="grid">
+<?php 
 
 if($_SESSION["player"] == "O") {
   if(isset($winner) == true){
