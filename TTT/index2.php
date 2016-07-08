@@ -69,6 +69,7 @@ if($_SESSION["player"] == "X"){
     echo <<<HTML
       <div class="winner">$winner</div>
 HTML;
+  print_r($_SESSION);
   }
 ?>
 
