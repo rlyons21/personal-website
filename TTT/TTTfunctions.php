@@ -139,7 +139,27 @@ function trackResults($grid, $records){
 #$winner a varriable that is not set until X or O wins 
 
 # returns the updated grid that includes the computers move
-function compMove($grid, $winner,$player){
+function compMove($grid, $winner, $player){
+      $moves = [];
+      for($i=0;$i<9;$i++){
+        if($grid[$i] == "-"){
+          array_push($moves,$i);
+        }
+      }
+
+      foreach($moves as $move){
+        $try = $grid;
+        $try[$move] = "O";
+        if(checkWinner($try) == "O Wins!!"){
+          return $try;
+        }
+        $try[$move] = "X";
+        if(checkWinner($try) == "X Wins!!"){
+          $try[$move] = "O";
+          return $try;
+        }
+      }
+
       $square = (string)rand(0,8);
       while($grid[$square] != "-"){
         $square = (string)rand(0,8);
@@ -152,10 +172,10 @@ function compMove($grid, $winner,$player){
 
 # echos a link for each finished game so user can view if they please
 
-# $file is the TTTstorage.txt file which contains the history of finished games 
-#since the last time the user clicked reset
+# $file is the TTTstorage.txt file which contains the history of finished games since the last time the user clicked reset
 
 # doesn't return anything
+
 function PastGames($file){
   $lines = count(file($file));
   for($i=1;$i<=$lines; $i++){ 

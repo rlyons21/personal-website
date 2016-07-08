@@ -42,6 +42,7 @@
 <div class="grid">
 <?php 
 
+
 if($_SESSION["player"] == "O") {
   if(isset($winner) == true){
     printGrid($grid,$_SESSION["player"],$winner);
@@ -69,7 +70,6 @@ if($_SESSION["player"] == "X"){
     echo <<<HTML
       <div class="winner">$winner</div>
 HTML;
-  print_r($_SESSION);
   }
 ?>
 
