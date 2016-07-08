@@ -13,20 +13,26 @@
 
 <div class="grid">
 <?php
+  if($_GET["playAgain"]){
+    $_SESSION["player"] = "X";
+  }
+
+
   if($_GET["reset"]){
     $_SESSION = null;
     file_put_contents("TTTstorage.txt","");
+
   }
 
   if (empty($_SESSION)){
       $_SESSION["Xwins"] = 0;
       $_SESSION["Owins"] = 0;
       $_SESSION["draws"] = 0;
+      $_SESSION["player"] = "X";
     }
 
   parse_str($_SERVER['QUERY_STRING'], $query);
-  $grid = isset($query['grid']) ? $query['grid'] : "---------X";
-  $player = $grid[9];
+  $grid = isset($query['grid']) ? $query['grid'] : "---------";
   $winner = checkWinner($grid);
   $results = trackResults($grid, $_SESSION);
   
@@ -39,21 +45,22 @@
 
 
 
-if($player == "O") {
+if($_SESSION["player"] == "O") {
   if(isset($winner) == true){
-    printGrid($grid,$player,$winner);
+    printGrid($grid,$_SESSION["player"],$winner);
   }else {
-   $grid = compMove($grid,$winner, $player);
-   $player = "X";
+   $grid = compMove($grid,$winner, $_SESSION["player"]);
+   $_SESSION["player"] = "X";
    $winner = checkWinner($grid);
    $results= trackResults($grid, $_SESSION);
-   fwrite($file_connection_current, substr($grid,0,9),"\n");
+   fwrite($file_connection_current, $grid,"\n");
  }
 } 
 
-if($player == "X"){
-   printGrid($grid, $player, $winner);
-   fwrite($file_connection_current, substr($grid,0,9));
+if($_SESSION["player"] == "X"){
+   printGrid($grid, $_SESSION["player"], $winner);
+   fwrite($file_connection_current, $grid);
+   $_SESSION["player"] = "O";
  }
   
 ?></div>
@@ -61,23 +68,26 @@ if($player == "X"){
 <?php
   
   if ($winner) {
-    fwrite($file_connection_s, substr($grid,0,9)."\n");
+    fwrite($file_connection_s, $grid."\n");
     echo <<<HTML
       <div class="winner">$winner</div>
 HTML;
   }
 ?>
 
-  <a href="index2.php" class="reset">Play Again!</a>
+  <a href="index2.php?playAgain=true" class="reset">Play Again!</a>
   <a href="index2.php?reset=true" class="reset"> Reset</a>
 
  
      <div class ="results__item"> <?php echo "X-Wins:  ", $results[0]; ?> </div> 
      <div class= "results__item"> <?php echo "O-Wins:  ", $results[1]; ?> </div>
      <div class = "results__item"> <?php echo "Draws:  ", $results[2]; ?> </div>
-     
-<?php fclose($file_connection_c);
-      fclose($file_connection_s); ?>
+
+<?php
+      fclose($file_connection_c);
+      fclose($file_connection_s);
+      pastGames($storage);
+ ?>
 
 
 </body>

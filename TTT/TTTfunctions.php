@@ -47,7 +47,6 @@ function printSquare($grid, $square, $player, $winner) {
     $mark = whatMark($grid[$square]);
 
     if (isItEmpty($grid, $square, $winner)) {
-      if($grid[9] == "X"){ $grid[9] = "O";}
       $newGrid = substr_replace($grid, $player, $square, 1);
 
       echo <<<HTML
@@ -151,4 +150,12 @@ function compMove($grid, $winner,$player){
 
 }
 
+function PastGames($file){
+  $lines = count(file($file));
+  for($i=1;$i<=$lines; $i++){ 
+  echo <<<HTML
+        <a href="load_game.php?game_number=$i">Game $i</a>
+HTML;
+  }
+}
 ?>
