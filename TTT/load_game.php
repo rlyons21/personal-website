@@ -29,7 +29,7 @@
 		<div class = "square"><?php echo $grid[8]; ?></div>
 	</div>
 
-	<a href="index2.php" class="reset">Go Back</a>
+	<a href="index2.php?playAgain=true" class="reset">Go Back</a>
 	
 </body>
 </html>

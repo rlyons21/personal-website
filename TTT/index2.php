@@ -11,7 +11,7 @@
 <body class = TTTcontent>
 
 <?php
-  if($_GET["playAgain"]){
+  if($_GET["playAgain"] == "true"){
     $_SESSION["player"] = "X";
   }
 

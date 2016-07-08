@@ -140,26 +140,10 @@ function trackResults($grid, $records){
 
 # returns the updated grid that includes the computers move
 function compMove($grid, $winner,$player){
-      $moves = [];
-      for($i = 0; $i < 9; $i++){
-        if($grid[$i] == "-"){
-          array_push($moves,$i);
-        }
+      $square = (string)rand(0,8);
+      while($grid[$square] != "-"){
+        $square = (string)rand(0,8);
       }
-
-      foreach($moves as $move){
-        $try = $grid;
-        $try[$move] = "O";
-        if(checkWinner($try)== "O Wins!!"){
-          return $try;
-        }
-        $try[$move] ="X";
-        if(checkWinner($try) == "X Wins!!"){
-          $try[$move] = "O";
-          return $try;
-        }
-      }
-      $square = array_rand($moves);
       
       $newGrid = substr_replace($grid, $player, $square, 1);
       return $newGrid;
