@@ -132,14 +132,14 @@ function trackResults($grid, $records){
 
 
 
-# Randomly chooses an available square for the computer to mark
+#chooses an available square for the computer to mark
 
 #$grid is a 9-digit string that represents each square on the
 #board(0=empty, 1= x, 2= O). $player represents whos turn it is
 #$winner a varriable that is not set until X or O wins 
 
-# returns the updated grid that includes the computers move
-function compMove($grid, $winner, $player){
+# returns the updated grid that includes the computer's move
+function compMove($grid, $player){
       $moves = [];
       for($i=0;$i<9;$i++){
         if($grid[$i] == "-"){
