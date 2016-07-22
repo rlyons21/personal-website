@@ -47,7 +47,10 @@
 					else { ?> <a href = "/articles/tic-tac-toe.php">Tackling Tic-Tac-Toe</a> <?php } ?> </li>	
 
 	<li> <?php	if($pageName == "personal-directory.php") { ?> <b>Personal Directory</b> <?php } 
-					else { ?> <a href = "/articles/personal-directory.php">Personal Directory</a> <?php } ?> </li>	
+					else { ?> <a href = "/articles/personal-directory.php">Personal Directory</a> <?php } ?> </li>
+
+	<li> <?php	if($pageName == "OCS-update.php") { ?> <b>Code School Update</b> <?php } 
+					else { ?> <a href = "/articles/OCS-update.php">Code School Update</a> <?php } ?> </li>	
 		
 	</div>
 </div>

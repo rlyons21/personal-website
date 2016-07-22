@@ -1,5 +1,5 @@
 <?php $title = "Code School Update" ?>
-<?php $pageName = "OSC-update.php" ?>
+<?php $pageName = "OCS-update.php" ?>
 <?php include("../top.php") ?>
 <?php include("../navigation.php") ?>
 
