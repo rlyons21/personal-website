@@ -44,7 +44,10 @@
 					else { ?> <a href = "/articles/paths.php">Paths: include() and href</a> <?php } ?> </li>
 
 	<li> <?php	if($pageName == "tic-tac-toe.php") { ?> <b>Tackling Tic-Tac-Toe</b> <?php } 
-					else { ?> <a href = "/articles/tic-tac-toe.php">Tackling Tic-Tac-Toe</a> <?php } ?> </li>		
+					else { ?> <a href = "/articles/tic-tac-toe.php">Tackling Tic-Tac-Toe</a> <?php } ?> </li>	
+
+	<li> <?php	if($pageName == "personal-directory.php") { ?> <b>Personal Directory</b> <?php } 
+					else { ?> <a href = "/articles/personal-directory.php">Personal Directory</a> <?php } ?> </li>	
 		
 	</div>
 </div>
