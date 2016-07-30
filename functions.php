@@ -32,5 +32,20 @@ function RPSfindWinner($user_choice,$comp_choice){ ?>
 		$user_choice == "scissors" && $comp_choice == "paper"){ 
 		return "You Won!";
 	 } 
- 
+
 } ?>
+
+
+<?php function themeSwitcher($_SESSION){
+	if($_SESSION["theme"] == "default"){
+		$_SESSION["theme"] = "alt";
+	} else{
+		$_SESSION["theme"] = "default";
+	}
+} ?>
+
+
+
+
+
+

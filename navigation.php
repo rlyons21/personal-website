@@ -1,5 +1,16 @@
+<?php session_start(); ?>
+<?php include("functions.php") ?>
 
+<?php if(empty($_SESSION)){
+	$_SESSION["theme"] = "default";
+} ?>
+
+<?php if($_SESSION["theme"] == "alt"){ ?>
+	
 	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+<?php } else { ?>
+	<link type= "text/css" rel = "stylesheet" href= "alt-style.css">
+<?php } ?>
 
 
 <div class= "nav">
@@ -10,7 +21,9 @@
 		</a>
 		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/images/linkedin.png" alt="LinkedIn"></a>
 		<a href="https://github.com/rlyons21"><img src="/images/github.png" alt="GitHub"></a>
-		<button class="themeSwitcher"></button>
+		
+		<?php if($_SESSION["theme"] == "alt"){ ?>
+		<button class="themeSwitcher" onclick="<?php themeSwitcher() ?>"></button>
 		
 	</div>
 
