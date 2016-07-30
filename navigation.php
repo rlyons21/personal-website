@@ -1,9 +1,12 @@
+<?php session_id("theme_info"); ?>
 <?php session_start(); ?>
 <?php include("functions.php"); ?>
 
 <?php if(empty($_SESSION)){
 	$_SESSION["theme"] = "default";
 } ?>
+
+
 
 <?php if($_SESSION["theme"] == "default"){ ?>
 	
@@ -22,11 +25,12 @@
 		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/images/linkedin.png" alt="LinkedIn"></a>
 		<a href="https://github.com/rlyons21"><img src="/images/github.png" alt="GitHub"></a>
 		
+		<?php echo $_SESSION["theme"]; ?>
 		
 		<button class="themeSwitcher"></button>
 		
 	</div>
-
+<?php session_write_close(); ?>
 	<div class="nav_section2">
 	 <p><?php  if($pageName == "index.php") { ?> <b>Home</b> <?php }  
 					else { ?> <a href = "/index.php">Home</a> <?php } ?><p>
