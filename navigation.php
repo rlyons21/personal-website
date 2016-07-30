@@ -1,11 +1,11 @@
 <?php session_start(); ?>
-<?php include("functions.php") ?>
+<?php include("functions.php"); ?>
 
 <?php if(empty($_SESSION)){
 	$_SESSION["theme"] = "default";
 } ?>
 
-<?php if($_SESSION["theme"] == "alt"){ ?>
+<?php if($_SESSION["theme"] == "default"){ ?>
 	
 	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
 <?php } else { ?>
@@ -22,8 +22,8 @@
 		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/images/linkedin.png" alt="LinkedIn"></a>
 		<a href="https://github.com/rlyons21"><img src="/images/github.png" alt="GitHub"></a>
 		
-		<?php if($_SESSION["theme"] == "alt"){ ?>
-		<button class="themeSwitcher" onclick="<?php themeSwitcher() ?>"></button>
+		
+		<button class="themeSwitcher"></button>
 		
 	</div>
 

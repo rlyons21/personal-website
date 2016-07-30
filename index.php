@@ -1,7 +1,7 @@
 <?php $title = "Home" ?>
 <?php $pageName = "index.php" ?>
-<?php include("top.php") ?>
-<?php include("navigation.php") ?>
+<?php include("top.php"); ?>
+<?php include("navigation.php"); ?>
 
 	<body id = "home">
 

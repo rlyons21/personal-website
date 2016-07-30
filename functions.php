@@ -36,7 +36,7 @@ function RPSfindWinner($user_choice,$comp_choice){ ?>
 } ?>
 
 
-<?php function themeSwitcher($_SESSION){
+<?php function themeSwitcher($session_info){
 	if($_SESSION["theme"] == "default"){
 		$_SESSION["theme"] = "alt";
 	} else{
