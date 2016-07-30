@@ -7,9 +7,9 @@
 
 <?php if($_SESSION["theme"] == "default"){ ?>
 	
-	<link type= "text/css" rel = "stylesheet" href= "stylesheet.css">
+	<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
 <?php } else { ?>
-	<link type= "text/css" rel = "stylesheet" href= "alt-style.css">
+	<link type= "text/css" rel = "stylesheet" href= "/alt-style.css">
 <?php } ?>
 
 
