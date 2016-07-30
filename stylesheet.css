@@ -27,10 +27,24 @@ body {
 	padding:10px;
 	height:auto;
 }
+
+.themeSwitcher{
+	height:20px;
+	width:20px;
+	border:none;
+	outline:0;
+	border-radius:5px;
+	background-color: #2C4050;
+	cursor:pointer;
+}
 .nav_section2{
 	background-color:#C2F16E;
 	padding:10px;
 	height:80%;
+}
+
+#home {
+	background-color:#BEF4DE
 }
 
 .content{
@@ -41,10 +55,6 @@ body {
 	float:right;
 	padding-right:10px;
 	padding-top:40px;
-}
-
-#home {
-	background-color:#BEF4DE
 }
 
 .articleContent{

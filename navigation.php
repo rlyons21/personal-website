@@ -10,6 +10,7 @@
 		</a>
 		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/images/linkedin.png" alt="LinkedIn"></a>
 		<a href="https://github.com/rlyons21"><img src="/images/github.png" alt="GitHub"></a>
+		<button class="themeSwitcher"></button>
 		
 	</div>
 
