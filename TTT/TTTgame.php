@@ -82,6 +82,11 @@
   <?php if($_SESSION["playerCount"] == "Two"){ ?>
             <div class="grid-2p">
                 <?php  printGrid($grid, $_SESSION["player"], $winner); ?>
+                <?php if($_SESSION["player"] == "X"){
+                        $_SESSION["player"] = "O";
+                      } else {
+                        $_SESSION["player"] = "X";
+                      }  ?>
 
 
             </div>
@@ -97,7 +102,7 @@ HTML;
 ?>
 
   <a href="TTTgame.php?playAgain=true" class="reset">Play Again!</a>
-  <a href="TTTgame.php?reset=true" class="reset"> Reset</a>
+  <a href="index2.php?reset=true" class="reset"> Reset</a>
 
  
      <div class ="results__item"> <?php echo "X-Wins:  ", $results[0]; ?> </div> 
