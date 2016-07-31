@@ -81,7 +81,9 @@
 
   <?php if($_SESSION["playerCount"] == "Two"){ ?>
             <div class="grid-2p">
-                <?php  printGrid($grid, $player, $winner); ?>
+                <?php  printGrid($grid, $_SESSION["player"], $winner); ?>
+
+
             </div>
   <?php } ?>
 <?php
