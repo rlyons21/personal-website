@@ -1,5 +1,6 @@
+<?php session_id("TTT"); ?>
 <?php session_start(); ?>
-<?php $pageName = "TTTgame.php" ?>
+<?php $pageName = "index2.php" ?>
 <?php include 'TTTfunctions.php' ?>
 <!DOCTYPE html>
 <html>
@@ -14,25 +15,16 @@
   if($_GET["playAgain"] == "true"){
     $_SESSION["player"] = "X";
   }
-  if($_GET["playerCount"]){
-    $_SESSION["player"] = "X";
-  }
-
   if($_GET["reset"]){
     $_SESSION = null;
     file_put_contents("TTTstorage.txt","");
-
   }
-
   if (empty($_SESSION)){
       $_SESSION["Xwins"] = 0;
       $_SESSION["Owins"] = 0;
       $_SESSION["draws"] = 0;
       $_SESSION["player"] = "X";
-      $_SESSION["numPlayers"] = $_GET["playerCount"];
     }
-    echo $_SESSION["numPlayers"];
-
   parse_str($_SERVER['QUERY_STRING'], $query);
   $grid = isset($query['grid']) ? $query['grid'] : "---------";
   $winner = checkWinner($grid);
@@ -45,20 +37,17 @@
 
 <div class="grid">
 <?php 
-
-
 if($_SESSION["player"] == "O") {
-  if(isset($winner)){
-    printGrid($grid, $_SESSION["player"], $winner);
+  if(isset($winner) == true){
+    printGrid($grid,$_SESSION["player"],$winner);
   }else {
-   $grid = compMove($grid, $_SESSION["player"]);
+   $grid = compMove($grid,$winner, $_SESSION["player"]);
    $_SESSION["player"] = "X";
    $winner = checkWinner($grid);
    $results= trackResults($grid, $_SESSION);
    fwrite($file_connection_current, $grid,"\n");
  }
 } 
-
 if($_SESSION["player"] == "X"){
    printGrid($grid, $_SESSION["player"], $winner);
    fwrite($file_connection_current, $grid);

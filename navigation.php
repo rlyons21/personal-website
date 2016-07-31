@@ -1,20 +1,17 @@
-<?php session_id("theme_info"); ?>
+
 <?php session_start(); ?>
-<?php include("functions.php"); ?>
 
-<?php if(empty($_SESSION)){
-	$_SESSION["theme"] = "default";
-} ?>
 
-<?php if(!(empty($_GET))){
+<?php if($_GET["theme"]){
 	$_SESSION["theme"] = $_GET["theme"];
-} ?>
+} 
 
-<?php if($_SESSION["theme"] == "default"){ ?>
-	
-	<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
-<?php } else { ?>
+?>
+
+<?php if($_SESSION["theme"] == "alt"){ ?>
 	<link type= "text/css" rel = "stylesheet" href= "/alt-style.css">
+<?php } else { ?>
+	<link type= "text/css" rel = "stylesheet" href= "/stylesheet.css">
 <?php } ?>
 
 
@@ -26,17 +23,26 @@
 		</a>
 		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/images/linkedin.png" alt="LinkedIn"></a>
 		<a href="https://github.com/rlyons21"><img src="/images/github.png" alt="GitHub"></a>
+
+		<?php echo $_SESSION["theme"]; ?>
 		
 		<?php if($_SESSION["theme"] == "default"){ ?>
+			
 			<form action="/index.php">
 				<button class="themeSwitcher" name="theme" value="alt"></button>
 			</form>
+		
 		<?php } else { ?>
+		
 			<form action="/index.php">
 				<button class="themeSwitcher" name="theme" value="default"></button>
 			</form>
+		
 		<?php } ?>
+	
 	</div>
+
+
 
 	<div class="nav_section2">
 	 <p><?php  if($pageName == "index.php") { ?> <b>Home</b> <?php }  
@@ -51,8 +57,8 @@
 	
 	<li> <?php	if($pageName == "index1.php" or $pageName == "winner.php") { ?> <b>Rock, Paper, Scissors</b> <?php } 
 					else { ?> <a href = "/RPS/index1.php">Rock, Paper, Scissors</a> <?php } ?> </li>	
-	<li> <?php	if($pageName == "index2.php") { ?> <b>Tic Tac Toe</b> <?php } 
-					else { ?> <a href = "/TTT/index2.php">Tic Tac Toe</a> <?php } ?> </li>
+	<li> <?php	if($pageName == "TTTgame.php") { ?> <b>Tic Tac Toe</b> <?php } 
+					else { ?> <a href = "/TTT/TTTgame.php">Tic Tac Toe</a> <?php } ?> </li>
 	
 	<h4><em> Articles </em></h4>
 
