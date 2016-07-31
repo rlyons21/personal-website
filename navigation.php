@@ -1,4 +1,4 @@
-
+<?php session_id("theme"); ?> 
 <?php session_start(); ?>
 
 
@@ -24,17 +24,16 @@
 		<a href="https://www.linkedin.com/in/rachel-lyons-b885b3123"><img src="/images/linkedin.png" alt="LinkedIn"></a>
 		<a href="https://github.com/rlyons21"><img src="/images/github.png" alt="GitHub"></a>
 
-		<?php echo $_SESSION["theme"]; ?>
 		
 		<?php if($_SESSION["theme"] == "default"){ ?>
 			
-			<form action="/index.php">
+			<form>
 				<button class="themeSwitcher" name="theme" value="alt"></button>
 			</form>
 		
 		<?php } else { ?>
 		
-			<form action="/index.php">
+			<form>
 				<button class="themeSwitcher" name="theme" value="default"></button>
 			</form>
 		
