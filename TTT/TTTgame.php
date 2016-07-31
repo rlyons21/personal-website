@@ -20,9 +20,15 @@
     <p class="header_text">Home</p>
   </div>
 
-  <div class = TTTcontent>
+  <div class ="TTTcontent">
 
 <?php
+
+  if($_GET["playerCount"]){
+    $_SESSION["player"] = "X";
+    $_SESSION["playerCount"] = $_GET["playerCount"];
+  }
+
   if($_GET["playAgain"] == "true"){
     $_SESSION["player"] = "X";
   }
@@ -46,27 +52,38 @@
   $file_connection_current = fopen($current, "w") or die("Error opening file");
   $file_connection_s = fopen($storage, "a") or die("Error opening file"); ?>
 
-<div class="grid">
-<?php 
-if($_SESSION["player"] == "O") {
-  if(isset($winner) == true){
-    printGrid($grid,$_SESSION["player"],$winner);
-  }else {
-   $grid = compMove($grid,$winner, $_SESSION["player"]);
-   $_SESSION["player"] = "X";
-   $winner = checkWinner($grid);
-   $results= trackResults($grid, $_SESSION);
-   fwrite($file_connection_current, $grid,"\n");
- }
-} 
-if($_SESSION["player"] == "X"){
-   printGrid($grid, $_SESSION["player"], $winner);
-   fwrite($file_connection_current, $grid);
-   $_SESSION["player"] = "O";
- }
-  
-?></div>
 
+
+<?php if($_SESSION["playerCount"] == "One"){ ?>
+            <div class="grid-1p">
+                  <?php 
+                  if($_SESSION["player"] == "O") {
+                    if(isset($winner) == true){
+                      printGrid($grid,$_SESSION["player"],$winner);
+                    }else {
+                     $grid = compMove($grid,$winner, $_SESSION["player"]);
+                     $_SESSION["player"] = "X";
+                     $winner = checkWinner($grid);
+                     $results= trackResults($grid, $_SESSION);
+                     fwrite($file_connection_current, $grid,"\n");
+                   }
+                  } 
+                  if($_SESSION["player"] == "X"){
+                     printGrid($grid, $_SESSION["player"], $winner);
+                     fwrite($file_connection_current, $grid);
+                     $_SESSION["player"] = "O";
+                   }
+                    
+                  ?>
+              
+            </div>
+<?php } ?>
+
+  <?php if($_SESSION["playerCount"] == "Two"){ ?>
+            <div class="grid-2p">
+                <?php  printGrid($grid, $player, $winner); ?>
+            </div>
+  <?php } ?>
 <?php
   
   if ($winner) {

@@ -3,9 +3,10 @@
 <?php $title = "Arkansas" ?>
 <?php $pageName = "Arkansas.php" ?>
 <?php include("top.php") ?>
-<?php include("navigation.php") ?>
+
 
 	<body>
+	<?php include("navigation.php") ?>
 	<div class="content">
 
 		<h3> Here are some pictures from my last 2 trips to Arkansas</h3>

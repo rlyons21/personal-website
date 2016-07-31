@@ -1,11 +1,12 @@
 <?php $title = "Rock, Paper, Scissors"; ?>
 <?php $pageName = "winner.php"; ?>
 <?php include("../top.php"); ?>
-<?php include("../navigation.php"); ?>
-<?php include("../functions.php"); ?>
+
 
 
 <body class = "RPScontent">
+<?php include("../navigation.php"); ?>
+<?php include("../functions.php"); ?>
 
    	<?php 
     	$choices = array("rock", "paper", "scissors");

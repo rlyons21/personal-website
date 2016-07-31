@@ -35,10 +35,15 @@ body {
 	background-color: #2C4050;
 	cursor:pointer;
 }
+
 .nav_section2{
 	background-color:#C2F16E;
 	padding:10px;
 	height:80%;
+}
+
+.navList{
+	list-style: none;
 }
 
 #home {

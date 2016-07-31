@@ -3,9 +3,9 @@
 <?php $title = "Goals" ?>
 <?php $pageName = "goals.php" ?>
 <?php include("top.php") ?>
-<?php include("navigation.php") ?>
 
 	<body>
+	<?php include("navigation.php") ?>
 	<div class="content">
 
 		<h2 style="color:red; text-align:center; font-family:sans-serif;"> My Goals</h2>

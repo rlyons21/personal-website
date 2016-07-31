@@ -1,9 +1,9 @@
 <?php $title = "Code School Update" ?>
 <?php $pageName = "OCS-update.php" ?>
 <?php include("../top.php") ?>
-<?php include("../navigation.php") ?>
 
 	<body class="articleContent">
+		<?php include("../navigation.php") ?>
 
 		<h3>Update: How things have been Going at Code School</h3>
 
@@ -27,4 +27,6 @@
 		When using JavaScript before I did not particularly enjoy it, however,
 		now that I'm using the language to improve front-end designs it is really
 		starting to grow on me.</p>
+	</body>
+	</html>
 
