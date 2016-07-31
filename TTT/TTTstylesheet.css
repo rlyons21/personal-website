@@ -1,3 +1,37 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+.header{
+  display:flex;
+  flex-direction: row;
+  background-color: #2C8930; 
+  height:35px;
+  align-items: center;
+  padding-left:20px;
+  color:white;
+  font-family: Helvetica;
+  margin-right:5px;
+}
+
+.arrow_t {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  background-color: #2C8930;
+  border-right:10px solid white; 
+}
+
+.arrow_s{
+  height:8px;
+  width:15px;
+  background-color:white;
+}
+
+
+
 .TTTcontent {
   font-family: serif;
   background-color: #124815;

@@ -9,7 +9,18 @@
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="TTTstylesheet.css">
 </head>
-<body class = TTTcontent>
+<body>
+
+  <div class="header">
+    <a class="header" href="/index.php">
+      <div class="arrow_t"></div>
+      <div class="arrow_s"></div>
+    </a>
+
+    <p class="header_text">Home</p>
+  </div>
+
+  <div class = TTTcontent>
 
 <?php
   if($_GET["playAgain"] == "true"){
@@ -79,6 +90,8 @@ HTML;
       fclose($file_connection_s);
       pastGames($storage);
  ?>
+
+  </div>
 
 
 </body>
