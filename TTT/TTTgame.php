@@ -101,6 +101,7 @@ HTML;
   }
 ?>
 
+
   <a href="TTTgame.php?playAgain=true" class="reset">Play Again!</a>
   <a href="index2.php?reset=true" class="reset"> Reset</a>
 
