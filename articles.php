@@ -1,12 +1,12 @@
-<?php $title = "Articles" ?>
-<?php $pageName = "articles.php" ?>
-<?php include("/top.php") ?>
+<?php $title = "Articles"; ?>
+<?php $pageName = "articles.php"; ?>
+<?php include("top.php") ?>
 
 
 	<body class="articleContent">
 
 
-		<?php include("/navigation.php") ?>
+		<?php include("navigation.php") ?>
 
 		<div class="topContainer">
 			<div class="articleTab" id="hack-the-pentagon">Hack the Pentagon</div>
