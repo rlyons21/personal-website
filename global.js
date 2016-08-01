@@ -21,7 +21,11 @@ window.addEventListener("load", function(){
 			
 			this.style.background = "#ebcded";
 		});
+
+		content[i].style.display ="none";
 	}
+
+	content[0].style.display = "block";
 
 
 
